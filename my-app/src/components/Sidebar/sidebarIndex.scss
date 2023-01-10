@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     z-index: 3;
-    min-height: 500px;
+    min-height: 585px;
   
     .logo {
       display: block;
@@ -119,14 +119,15 @@
         list-style: none;
         text-align: center;
         margin: 0;
+        margin-top: 5px;
     
         li {
           a {
             padding: 7px 0;
             display: block;
-            font-size: 27px;
+            font-size: 35px;
             line-height: 16px;
-            height:35px;
+            height:45px;
             color: rgb(141,123,112);
           }
     
@@ -143,6 +144,7 @@
     display: none;
 }
 
+//TO-DO Set min-height for media site
 // @media screen and (max-width: 1200px) {
 //     .nav-bar { 
 //       background: transparent;

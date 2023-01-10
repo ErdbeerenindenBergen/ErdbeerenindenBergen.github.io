@@ -1,11 +1,11 @@
 import { Link, NavLink } from 'react-router-dom'
-import './index.scss'
+import './sidebarIndex.scss'
 import { useState } from 'react'
 import LogoKB from '../../assets/images/LogoKB.png'
 import LogoSubtitleCream from '../../assets/images/LogoSubtitleCream.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope, faBook, faTelevision } from '@fortawesome/free-solid-svg-icons'
-import { faLinkedin, faGithub, faYoutube, faSkype } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
     const [showNav, setShowNav] = useState(false);
