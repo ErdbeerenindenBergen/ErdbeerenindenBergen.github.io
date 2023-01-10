@@ -10,7 +10,7 @@ const Home = () => {
 
     const [letterClass, setLetterClass] = useState('text-animate')
 
-    const nameArray = [' ','K','a','s','s','i',' ','B','u','r','n','e','t','t']
+    const nameArray = [' ','K','a','s','s','i',' ','B','u','r','n','e','t','t',',',' ','P','h','D']
     const jobArray = ['W','e','b',' ','D','e','v','e','l','o','p','e','r']
 
 return (
@@ -36,7 +36,7 @@ return (
               idx={22}
             />
          </h1>
-         <h2>Fullstack Software Developer</h2>
+         <h2>Fullstack Software Engineer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
