@@ -4,17 +4,17 @@ $primary-color: goldenrod;
 
 @font-face {
   font-family: 'Helvetica Neue';
-  src: url('my-app/src/assets/fonts/helvetica-neu.ttf') format('ttf');
+  src: url('./assets/fonts/helvetica-neu.ttf') format('ttf');
 }
 
 @font-face {
   font-family: 'La Belle Aurore';
-  src: url('my-app/src/assets/fonts/LaBelleAurore.woff2') format('woff2');
+  src: url('./assets/fonts/LaBelleAurore.woff2') format('woff2');
 }
 
 @font-face {
   font-family: 'Coolvetica';
-  src: url('my-app/src/assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
+  src: url('./assets/fonts/CoolveticaRg-Regular.woff2') format('woff2');
 }
 
 input,
