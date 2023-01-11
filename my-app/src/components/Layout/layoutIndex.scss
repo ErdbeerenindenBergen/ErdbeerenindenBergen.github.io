@@ -142,6 +142,8 @@
       }
     }
   }
+
+  
   
   @media screen and (max-width: 1200px) {
     .page {
@@ -160,7 +162,7 @@
       &.about-page,
       &.portfolio-page {
         .text-zone {
-          // margin-left:10%;
+          //  margin-left:10%;
           display: flex;
           transform: none;
           width: 75%;
