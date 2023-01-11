@@ -23,10 +23,10 @@ const About = () => {
   }, []);
 
   const slides = [
-    {  url: "http://localhost:3000/image-1.jpg", title: "Spent a lot of time teaching" },
-    {  url: "http://localhost:3000/image-2.jpg", title: "Spent a lot of time abroad" },
-    {  url: "http://localhost:3000/image-3.jpg", title: "Presented around the world" },
-    {  url: "http://localhost:3000/image-4.jpg", title: "Dad is a coal miner."  }
+    {  url: "http://localhost:3000/image-1.jpg", title: "Spent a lot of time teaching", text: "During my almost decade-long teaching career, I delivered over $4.1M in instructional services to 1700+ students and received an evaluation rating of 4.9 out of 5 across 47 courses with 3 different universities." },
+    {  url: "http://localhost:3000/image-2.jpg", title: "Spent a lot of time abroad", text: "this is a test" },
+    {  url: "http://localhost:3000/image-3.jpg", title: "Presented around the world", text: "this is a test" },
+    {  url: "http://localhost:3000/image-4.jpg", title: "Dad is a coal miner.", text: "this is a test"  }
   ];
 
   return (

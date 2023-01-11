@@ -19,6 +19,10 @@ const ImageSlider = ({slides}) => {
 
     <div style={backgroundImage} className="slide"></div>
 
+    <div className="spacingForSubtext">
+      <h4>{slides[currentIndex].text}</h4>
+    </div>  
+
     <div className='arrowSpace'>
       <FontAwesomeIcon icon={faSquareCaretRight} className='rightArrow'/>
     </div>

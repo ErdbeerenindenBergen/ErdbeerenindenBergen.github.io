@@ -27,6 +27,12 @@
     color:white;
   }
 
+  h4 {
+    font-size: 15px;
+    color:antiquewhite;
+    font-family: Arial;
+  }
+
   .rightArrow {
     position: absolute;
     top: 50%;
@@ -37,3 +43,7 @@
     z-index: 1;
     cursor: pointer;
   };
+
+  .spacingForSubtext {
+    margin-bottom: 50px;
+  }
