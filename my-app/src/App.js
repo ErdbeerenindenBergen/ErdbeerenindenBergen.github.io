@@ -4,6 +4,8 @@ import Layout from './components/Layout/layoutIndex'
 import Sidebar from './components/Sidebar/sidebarIndex'
 import Home from './components/Home/homeIndex'
 import About from './components/About/aboutIndex'
+import { Carousel } from 'react-carousel3';
+import ImageSlider from './components/ImageSlider/imageSliderIndex'
 
 function App() {
   return (

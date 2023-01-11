@@ -1,11 +1,28 @@
 import { useState } from 'react'
-import LogoKB from '../../assets/images/LogoKB.png'
+import './imageSliderIndex.scss'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-svg-icons'
 
 const ImageSlider = ({slides}) => {
   const [currentIndex, setCurrentUser] = useState(0);
+
+  const backgroundImage = {
+    backgroundImage: `url(${slides[currentIndex].url})`
+  };
+
   return (
-  <div>ImageSlider
-    {/* <div style={{backgroundImage: LogoKB}}></div> */}
+  <div className='slider'>
+
+    <div className='arrowSpace'>            
+      <FontAwesomeIcon icon={faSquareCaretLeft} className='leftArrow'/>
+    </div>
+
+    <div style={backgroundImage} className="slide"></div>
+
+    <div className='arrowSpace'>
+      <FontAwesomeIcon icon={faSquareCaretRight} className='rightArrow'/>
+    </div>
+
   </div>
   )
 };
