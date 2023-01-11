@@ -23,10 +23,11 @@ const About = () => {
   }, []);
 
   const slides = [
-    {  url: "http://localhost:3000/image-1.jpg", title: "Spent a lot of time teaching", text: "During my almost decade-long teaching career, I delivered over $4.1M in instructional services to 1700+ students and received an evaluation rating of 4.9 out of 5 across 47 courses with 3 different universities." },
-    {  url: "http://localhost:3000/image-2.jpg", title: "Spent a lot of time abroad", text: "this is a test" },
-    {  url: "http://localhost:3000/image-3.jpg", title: "Presented around the world", text: "this is a test" },
-    {  url: "http://localhost:3000/image-4.jpg", title: "Dad is a coal miner.", text: "this is a test"  }
+    {  url: "http://localhost:3000/image-1.jpg", title: "teaching", text: "During my almost decade-long teaching career, I delivered over $4.1M in instructional services to 1700+ students and received an evaluation rating of 4.9 out of 5 across 47 courses with 3 different universities.", subtitle: "Here, I am teaching a seminar titled \"Animal Cultures\" at TU Darmstadt"},
+    {  url: "http://localhost:3000/image-2.jpg", title: "time abroad", text: "Since 2011, I have spent several years living abroad as a bilingual research scholar and instructor in Berlin, Dresden, and Munich, where I cultivated my love for people, food, and nature.", subtitle: "On a hike?" },
+    {  url: "http://localhost:3000/image-3.jpg", title: "phd", text: "In December 2021, I graduated with my PhD in German Studies after the successful defense of my dissertation, a culmination of my research about cultural perceptions and representations of disability.", subtitle: "place holder" },
+    {  url: "http://localhost:3000/image-4.jpg", title: "EU-Nato trip", text: "In 2019, I was selected alongside a NY Times journalist as one of only 2 nominees in Germany by the German and Belgian Fulbright Commissions to travel to Luxembourg and Belgium for week-long seminar at the EU and NATO headquarters; discussed government responses to cyberterrorism", subtitle: "place holder" }
+    //add pic for Sierra Club? - need to show experience!
   ];
 
   return (
