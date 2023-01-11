@@ -24,7 +24,7 @@ const Contact = () => {
       e.preventDefault()
 
     emailjs
-    .sendForm('gmail', 'SET UP TEMPLATE', form.current, 'your-token')
+    .sendForm('service_b0ifdvh', 'template_q427m8l', form.current, 'hMhE5pOvAEPDiPUfG')
     .then(
       () => {
         alert('Message successfully sent!')
@@ -39,7 +39,6 @@ const Contact = () => {
     return (
     <>
     <div className='container contact-page'>
-      {/* <div className="splitting-the-page"> */}
         <div className="text-zone">
           <h1 className="left-sided">
             <AnimatedLetters
@@ -91,18 +90,15 @@ const Contact = () => {
             </div>
           </div>
 
-
-
-        {/* <div class="right-side"> */}
         <div className="info-map">
             Kassi Burnett
             <br />
             Atlanta, Georgia
             <br />
-            <span>burnettkassi@gmail.com</span>
+            {/* <span>burnettkassi@gmail.com</span> */}
         </div>
         <div className="map-wrap">
-          <MapContainer center={[33.75374, -84.386330]} zoom={12}>
+          <MapContainer center={[33.75374, -84.386330]} zoom={6}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[33.75374, -84.386330]}>
               <Popup>I live here!</Popup>
@@ -110,9 +106,6 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-      {/* </div> */}
-
-      {/* </div> */}
     </>
     )
 }
