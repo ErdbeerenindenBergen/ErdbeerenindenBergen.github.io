@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import Portrait from '../../assets/images/Portrait.JPG'
 // import SquarePortrait from '../../assets/images/SquarePortrait.JPG'
-// import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 // import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './homeIndex.scss'
+import React from "react"
+import Contact from '../Contact/contactIndex'
 
 const Home = () => {
 
@@ -24,6 +26,12 @@ const Home = () => {
         clearTimeout(timeout);
       };
     }, []);
+
+    let navigate = useNavigate(); 
+    const routeChange = () =>{ 
+      let path = `contact`; 
+      navigate(path);
+    }
 
 return (
   <>
@@ -52,7 +60,7 @@ return (
          <h2>Fullstack Software Engineer</h2>
          <h3>Award-winning Scholar and Writer</h3>
          <div className="button-space">
-          <button to="/contact" className="flat-button">
+          <button onClick={routeChange} className="flat-button">
             CONTACT ME
           </button>
           </div>
