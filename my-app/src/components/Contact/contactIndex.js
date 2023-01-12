@@ -5,8 +5,10 @@ import React, { useEffect, useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
-  const form = useRef()
+  const [letterClass, setLetterClass] = useState('text-animate');
+  const form = useRef();
+  const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
+  const token = process.env.REACT_APP_EMAILJS_TOKEN;
 
   useEffect(() => {
     let timeout;
@@ -24,7 +26,7 @@ const Contact = () => {
     e.preventDefault()
 
     emailjs
-      .sendForm('service_b0ifdvh', 'template_q427m8l', form.current, 'hMhE5pOvAEPDiPUfG')
+      .sendForm(serviceID, 'template_q427m8l', form.current, token)
       .then(
         () => {
           alert('Message successfully sent!')

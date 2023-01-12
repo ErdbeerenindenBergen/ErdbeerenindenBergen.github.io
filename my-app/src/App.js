@@ -7,6 +7,8 @@ import Contact from './components/Contact/contactIndex';
 import News from './components/News/newsIndex';
 import Portfolio from './components/Portfolio/portfolioIndex';
 
+//prevent refresh default with route
+
 function App() {
   return (
   <>
