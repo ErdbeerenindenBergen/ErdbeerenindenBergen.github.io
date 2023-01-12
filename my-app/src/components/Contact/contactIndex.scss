@@ -158,16 +158,6 @@ h3 {
     }
 }
 
-//   .splitting-the-page {
-//     display: flex;
-//     flex-direction: row;
-//   }
-
-//   .right-side {
-//     width:50%;
-//     margin-right:0px;
-//   }
-
 @media screen and (max-width: 900px) {
 
     .contact-form,
@@ -176,6 +166,15 @@ h3 {
         width: 100%;
         top: 100%;
         margin-top: 20px;
+        margin-left: 0;
+        left:0;
+        margin-right: 0;
+    }
+
+    .container {
+        margin-left: 0;
+        margin-right: 0;
+        left:0;
     }
 
     // .positionChange {
@@ -196,12 +195,19 @@ h3 {
     }
 
     .info-map {
-        display: block;
+        position: none;
+        display: flex;
         margin-top: 500px;
         align-items: center;
+        margin-left: 0;
+        margin-right: 0;
     }
 
-    .info-map {
-        //   display: none;
-    }
+    // .center-info-map {
+    //     position: absolute;
+    //     justify-content: center;
+    //     align-items: center;
+    //     width: 100%;
+    // }
+
 }

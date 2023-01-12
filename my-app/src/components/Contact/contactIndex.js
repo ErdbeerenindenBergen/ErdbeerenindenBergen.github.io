@@ -90,13 +90,17 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="info-map">
-          Kassi Burnett
-          <br />
-          Atlanta, Georgia
-          <br />
-          {/* <span>burnettkassi@gmail.com</span> */}
+        <div className="center-info-map">
+          <div className="info-map">
+            Kassi Burnett
+            <br />
+            Atlanta, Georgia
+            <br />
+            {/* <span>burnettkassi@gmail.com</span> */}
+          </div>
         </div>
+
+
         <div className="map-wrap">
           <MapContainer center={[33.75374, -84.386330]} zoom={6}>
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
