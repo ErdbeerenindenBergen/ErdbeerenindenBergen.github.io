@@ -6,7 +6,6 @@ import { useNavigate } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './homeIndex.scss'
 import React from "react"
-import Contact from '../Contact/contactIndex'
 
 const Home = () => {
 
