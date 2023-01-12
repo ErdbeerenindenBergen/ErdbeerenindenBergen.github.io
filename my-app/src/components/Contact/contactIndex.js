@@ -5,40 +5,40 @@ import React, { useEffect, useState, useRef } from 'react'
 import emailjs from '@emailjs/browser'
 
 const Contact = () => {
-    const [letterClass, setLetterClass] = useState('text-animate')
-    const form = useRef()
+  const [letterClass, setLetterClass] = useState('text-animate')
+  const form = useRef()
 
-    useEffect(() => {
-      let timeout;
-  
-      timeout = setTimeout(() => {
-        setLetterClass("text-animate-hover");
-      }, 3000);
-    
-      return () => {
-        clearTimeout(timeout);
-      };
-    }, []);
+  useEffect(() => {
+    let timeout;
 
-    const sendEmail = (e) => {
-      e.preventDefault()
+    timeout = setTimeout(() => {
+      setLetterClass("text-animate-hover");
+    }, 3000);
+
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, []);
+
+  const sendEmail = (e) => {
+    e.preventDefault()
 
     emailjs
-    .sendForm('service_b0ifdvh', 'template_q427m8l', form.current, 'hMhE5pOvAEPDiPUfG')
-    .then(
-      () => {
-        alert('Message successfully sent!')
-        window.location.reload(false)
-      },
-      () => {
-        alert('Failed to send the message, please try again')
-      }
-    )
-}
+      .sendForm('service_b0ifdvh', 'template_q427m8l', form.current, 'hMhE5pOvAEPDiPUfG')
+      .then(
+        () => {
+          alert('Message successfully sent!')
+          window.location.reload(false)
+        },
+        () => {
+          alert('Failed to send the message, please try again')
+        }
+      )
+  }
 
-    return (
+  return (
     <>
-    <div className='container contact-page'>
+      <div className='container contact-page'>
         <div className="text-zone">
           <h1 className="left-sided">
             <AnimatedLetters
@@ -51,13 +51,13 @@ const Contact = () => {
             If you have any requests or questions, please don't hesitate to contact me.
           </h3>
           <div className='contact-form'>
-          <form ref={form} onSubmit={sendEmail}>
+            <form ref={form} onSubmit={sendEmail}>
               <ul>
                 <li className="half">
-                  <input placeholder="Your name" 
-                  type="text" 
-                  name="name" 
-                  required />
+                  <input placeholder="Your name"
+                    type="text"
+                    name="name"
+                    required />
                 </li>
                 <li className="half">
                   <input
@@ -87,15 +87,15 @@ const Contact = () => {
                 </li>
               </ul>
             </form>
-            </div>
           </div>
+        </div>
 
         <div className="info-map">
-            Kassi Burnett
-            <br />
-            Atlanta, Georgia
-            <br />
-            {/* <span>burnettkassi@gmail.com</span> */}
+          Kassi Burnett
+          <br />
+          Atlanta, Georgia
+          <br />
+          {/* <span>burnettkassi@gmail.com</span> */}
         </div>
         <div className="map-wrap">
           <MapContainer center={[33.75374, -84.386330]} zoom={6}>
@@ -107,7 +107,7 @@ const Contact = () => {
         </div>
       </div>
     </>
-    )
+  )
 }
 
 export default Contact

@@ -1,133 +1,139 @@
-.contact-form, .left-sided {
+.contact-form,
+.left-sided {
     width: 50%;
     margin-top: 20px;
-  
+
     ul {
-      padding: 0;
-      margin: 0;
-  
-      li {
         padding: 0;
         margin: 0;
-        list-style: none;
-        margin-bottom: 10px;
-        opacity: 0;
-        overflow: hidden;
-        display: block;
-        clear: both;
-        position: relative;
-        animation: fadeInUp 2s 2s;
-        animation-fill-mode: forwards;
-      }
-  
-      li.half {
-        width: 49%;
-        margin-left: 2%;
-        float: left;
-        clear: none;
-  
-        &:first-child {
-          margin-left: 0;
+
+        li {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 2s 2s;
+            animation-fill-mode: forwards;
         }
-      }
-    }
-  
-    input[type='text'],
-    input[type='email'] {
-      width: 100%;
-      border: 0;
-      background: rgb(79, 121, 110);
-      height: 50px;
-      font-size: 16px;
-      color: #fff;
-      padding: 0 20px;
-      box-sizing: border-box;
+
+        li.half {
+            width: 49%;
+            margin-left: 2%;
+            float: left;
+            clear: none;
+
+            &:first-child {
+                margin-left: 0;
+            }
+        }
     }
 
-    input::placeholder, textarea::placeholder {
+    input[type='text'],
+    input[type='email'] {
+        width: 100%;
+        border: 0;
+        background: rgb(79, 121, 110);
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    input::placeholder,
+    textarea::placeholder {
         opacity: 0.8;
         color: lightgray;
     }
 
-    input:focus, textarea:focus{
-        outline-color:white;
+    input:focus,
+    textarea:focus {
+        outline-color: white;
     }
-  
-    textarea {
-      width: 100%;
-      border: 0;
-      background: rgb(79, 121, 110);
-      height: 50px;
-      font-size: 16px;
-      color: #fff;
-      padding: 20px;
-      box-sizing: border-box;
-      min-height: 150px;
-    }
-  
-    .flat-button {
-      color: 0 0;
-      font-weight: bold;
-      font-size: 13px;
-      letter-spacing: 3px;
-      text-decoration: none;
-      padding: 8px 10px;
-      border: none;
-      border: 1.5px solid white;
-      border-radius: 4px;
-      background-color: rgb(255, 234, 206);
-      text-transform: uppercase;
-      float: right;
-      text-align: center;
-      margin-right: 10px;
-    }
-  }
 
-  .flat-button:hover {
+    textarea {
+        width: 100%;
+        border: 0;
+        background: rgb(79, 121, 110);
+        height: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding: 20px;
+        box-sizing: border-box;
+        min-height: 150px;
+    }
+
+    .flat-button {
+        color: 0 0;
+        font-weight: bold;
+        font-size: 13px;
+        letter-spacing: 3px;
+        text-decoration: none;
+        padding: 8px 10px;
+        border: none;
+        border: 1.5px solid white;
+        border-radius: 4px;
+        background-color: rgb(255, 234, 206);
+        text-transform: uppercase;
+        float: right;
+        text-align: center;
+        margin-right: 10px;
+    }
+}
+
+.flat-button:hover {
     background-color: rgb(236, 147, 127);
     color: white;
-  }
+}
 
 //   .flat-button:on-click {
 //     background-color: rgb(213, 103, 78);
 //   }
-  
-  .map-wrap {
+
+.map-wrap {
     background: rgba(8, 253, 216, 0.1);
     float: right;
     width: 45%;
     height: 115%;
     margin-top: -3%;
-  }
-  
-  .leaflet-container {
+}
+
+.leaflet-container {
     position: relative;
     width: 100%;
     height: 100vh;
     opacity: 0;
     animation: backInRight 1s 1.2s;
     animation-fill-mode: forwards;
-  }
+}
 
-  h3 {
+h3 {
     font-size: 18px;
     color: #fff;
     font-family: sans-serif;
     font-weight: 300;
     margin-top: 100px;
     animation: pulse 1s;
+
     &:nth-of-type(1) {
-      animation-delay: 1.1s;
+        animation-delay: 1.1s;
     }
+
     &:nth-of-type(2) {
-      animation-delay: 1.2s;
+        animation-delay: 1.2s;
     }
+
     &:nth-of-type(3) {
-      animation-delay: 1.3s;
+        animation-delay: 1.3s;
     }
-  }
-  
-  .info-map {
+}
+
+.info-map {
     position: absolute;
     background: rgb(60, 54, 49);
     top: 50px;
@@ -142,15 +148,15 @@
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
-  
+
     span {
-      font-size: 16px;
-  
-      span {
-        color: rgb(236, 147, 127);
-      }
+        font-size: 16px;
+
+        span {
+            color: rgb(236, 147, 127);
+        }
     }
-  }
+}
 
 //   .splitting-the-page {
 //     display: flex;
@@ -161,10 +167,11 @@
 //     width:50%;
 //     margin-right:0px;
 //   }
-  
-  @media screen and (max-width: 900px) {
 
-    .contact-form, .left-sided{
+@media screen and (max-width: 900px) {
+
+    .contact-form,
+    .left-sided {
         display: flex;
         width: 100%;
         top: 100%;
@@ -181,11 +188,11 @@
     }
 
     .map-wrap {
-      float: none;
-      margin: 0;
-      width: 100%;
-      height: 400px;
-      display: none;
+        float: none;
+        margin: 0;
+        width: 100%;
+        height: 400px;
+        display: none;
     }
 
     .info-map {
@@ -193,8 +200,8 @@
         margin-top: 500px;
         align-items: center;
     }
-    
+
     .info-map {
-    //   display: none;
+        //   display: none;
     }
-  }
+}

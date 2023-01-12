@@ -3,7 +3,7 @@ import './imageSliderIndex.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-svg-icons'
 
-const ImageSlider = ({slides}) => {
+const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const backgroundImage = {
@@ -23,23 +23,23 @@ const ImageSlider = ({slides}) => {
   }
 
   return (
-  <div className='slider'>
+    <div className='slider'>
 
-    <div className='arrowSpace' onClick={goToPrevious}>            
-      <FontAwesomeIcon icon={faSquareCaretLeft} className='leftArrow'/>
+      <div className='arrowSpace' onClick={goToPrevious}>
+        <FontAwesomeIcon icon={faSquareCaretLeft} className='leftArrow' />
+      </div>
+
+      <div style={backgroundImage} className="slide"></div>
+
+      <div className="spacingForSubtext">
+        <h4>{slides[currentIndex].text}</h4>
+      </div>
+
+      <div className='arrowSpace' onClick={goToNext}>
+        <FontAwesomeIcon icon={faSquareCaretRight} className='rightArrow' />
+      </div>
+
     </div>
-
-    <div style={backgroundImage} className="slide"></div>
-
-    <div className="spacingForSubtext">
-      <h4>{slides[currentIndex].text}</h4>
-    </div>  
-
-    <div className='arrowSpace' onClick={goToNext}>
-      <FontAwesomeIcon icon={faSquareCaretRight} className='rightArrow'/>
-    </div>
-
-  </div>
   )
 };
 
