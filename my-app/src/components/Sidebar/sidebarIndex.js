@@ -4,7 +4,7 @@ import { useState } from 'react'
 import LogoKB from '../../assets/images/LogoKB.png'
 import LogoSubtitleCream from '../../assets/images/LogoSubtitleCream.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faBook, faTelevision } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faBook, faTelevision, faBars } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -12,7 +12,9 @@ const Sidebar = () => {
 
 return (
   <div className="nav-bar" >
-    <Link className="logo" to="/">
+    <Link className="logo" 
+    // class="left-corner" 
+    to="/">
         <img src={LogoKB} alt="logo" />
         <img className="sub-logo" src={LogoSubtitleCream} alt="Kassi Burnett, PhD" />
     </Link>
@@ -65,8 +67,13 @@ return (
             />
           </a>
         </li>
-
       </ul>
+      <FontAwesomeIcon 
+          onClick={() => setShowNav(true)}
+          icon={faBars}
+          color="#ffd700"
+          size="3x"
+          className='hamburger-icon' />
 
     </div>
   )

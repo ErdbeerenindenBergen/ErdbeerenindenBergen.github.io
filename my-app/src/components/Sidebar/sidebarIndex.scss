@@ -145,55 +145,81 @@
 }
 
 //TO-DO Set min-height for media site
-// @media screen and (max-width: 1200px) {
-//     .nav-bar { 
-//       background: transparent;
-//       position: initial;
-//       height: auto;
-//       min-height: auto;
+@media screen and (max-width: 1200px) {
+    .nav-bar { 
+      // background: transparent;
+      position: initial;
+      height: auto;
+      min-height: auto;
+      //comment out below to move icon
+      width:100%;
   
-//        ul, nav {
-//         display: none;
-//        }
+       ul, nav {
+        display: none;
+       }
   
-//        nav {
-//         width: 100%;
-//         top: 0;
-//         left: 0;
-//         background: #181818;
-//         height: 100%;
-//         margin: 0;
-//         z-index: 2;
-//         position: fixed;
+       nav {
+        padding-top: 30px;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: rgb(60, 54, 49);
+        height: 100%;
+        margin: 0;
+        z-index: 2;
+        position: fixed;
   
-//         &.mobile-show {
-//           display: block;
-//         }
+        &.mobile-show {
+          display: block;
+        }
   
-//         a {
-//           display: flex;
-//           justify-content: center;
-//           align-items: center;
-//         }
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
   
-//         a:after {
-//           opacity: 1;
-//           position: initial;
-//           width: auto;
-//           margin-left: 10PX;
-//         }
+        a:after {
+          opacity: 1;
+          position: initial;
+          width: auto;
+          margin-left: 10PX;
+        }
   
-//         a svg {
-//           opacity: 1 !important;
-//         }
-//        }
+        a svg {
+          opacity: 1 !important;
+        }
+       }
   
-//        .hamburger-icon,
-//        .close-icon {
-//           position: absolute;
-//           top: 15px;
-//           right: 15px;
-//           display: block;
-//        }
-//     }
-// }
+       .hamburger-icon,
+       .close-icon {
+          position: absolute;
+          font-size: 45px;
+          top: 25px;
+          right: 25px;
+          display: block;
+          color: rgb(141,123,112);
+       }
+
+       .hamburger-icon:hover {
+        cursor: pointer;
+       }
+    }
+
+    .logo {
+
+       img {
+         margin: 0;
+       }
+    }
+
+    // .left-corner {
+    //     display: block;
+    //     padding: 8px 0;
+    //       margin: 8px auto;
+    //       width: 54px;
+    //       height: auto;
+    //         width: 90px;
+    // }
+}

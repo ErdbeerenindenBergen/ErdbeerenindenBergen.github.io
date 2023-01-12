@@ -38,7 +38,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='container contact-page'>
+      <div className='container contact-page positionChange'>
         <div className="text-zone">
           <h1 className="left-sided">
             <AnimatedLetters
