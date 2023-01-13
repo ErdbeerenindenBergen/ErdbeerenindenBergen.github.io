@@ -7,8 +7,7 @@ import emailjs from '@emailjs/browser'
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
   const form = useRef();
-  const serviceID = process.env.REACT_APP_EMAILJS_SERVICE_ID;
-  // const token = process.env.REACT_APP_EMAILJS_TOKEN;
+  
 
   useEffect(() => {
     let timeout;
@@ -23,12 +22,10 @@ const Contact = () => {
   }, []);
 
   const sendEmail = (e) => {
-    console.log(token);
-    console.log(serviceID);
     e.preventDefault()
 
     emailjs
-      .sendForm(serviceID, 'template_q427m8l', form.current, hMhE5pOvAEPDiPUfG)
+      .sendForm('service_b0ifdvh', 'template_q427m8l', form.current, 'hMhE5pOvAEPDiPUfG')
       .then(
         () => {
           alert('Message successfully sent!')
