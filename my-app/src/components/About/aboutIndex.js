@@ -23,7 +23,7 @@ const About = () => {
 
   const slides = [
     {
-      url: "http://erdbeerenindenbergen.github.io/image-1.jpg",
+      url: "http://localhost:3000/image-1.jpg",
       title: "teaching", 
       text: "During my almost decade-long teaching career, I delivered over $4.1M in instructional services to 1700+ students and received an evaluation rating of 4.9 out of 5 across 47 courses with 3 different universities.",
       subtitle: "Here, I am teaching a seminar titled \"Animal Cultures\" at TU Darmstadt"
@@ -62,7 +62,7 @@ const About = () => {
           </h1>
 
           <div>
-            <div className='containerStyles'>
+            <div className='container-styles'>
               <ImageSlider slides={slides} />
             </div>
           </div>

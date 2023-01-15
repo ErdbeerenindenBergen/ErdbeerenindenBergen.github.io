@@ -4,7 +4,7 @@ import Layout from './components/Layout/layoutIndex';
 import Home from './components/Home/homeIndex';
 import About from './components/About/aboutIndex';
 import Contact from './components/Contact/contactIndex';
-import News from './components/News/newsIndex';
+import Skills from './components/Skills/skillsIndex';
 import Portfolio from './components/Portfolio/portfolioIndex';
 
 //prevent refresh default with route
@@ -18,7 +18,7 @@ function App() {
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
       <Route path="portfolio" element={<Portfolio />} />
-      <Route path="news" element={<News />} />
+      <Route path="skills" element={<Skills />} />
       </Route>
     </Routes>
   </>

@@ -25,18 +25,18 @@ const ImageSlider = ({ slides }) => {
   return (
     <div className='slider'>
 
-      <div className='arrowSpace' onClick={goToPrevious}>
-        <FontAwesomeIcon icon={faSquareCaretLeft} className='leftArrow' />
+      <div className='arrow-space' onClick={goToPrevious}>
+        <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' />
       </div>
 
       <div style={backgroundImage} className="slide"></div>
 
-      <div className="spacingForSubtext">
+      <div className="spacing-for-subtext">
         <h4>{slides[currentIndex].text}</h4>
       </div>
 
-      <div className='arrowSpace' onClick={goToNext}>
-        <FontAwesomeIcon icon={faSquareCaretRight} className='rightArrow' />
+      <div className='arrow-space' onClick={goToNext}>
+        <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' />
       </div>
 
     </div>

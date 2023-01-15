@@ -1,10 +1,10 @@
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
-import './newsIndex.scss'
+import './skillsIndex.scss'
 import React, { useEffect, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 
-const News = () => {
+const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
 
     useEffect(() => {
@@ -21,7 +21,7 @@ const News = () => {
 
     return (
         <>
-            <div className='container news-page'>
+            <div className='container skills-page'>
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
@@ -30,7 +30,7 @@ const News = () => {
                             idx={15}
                         />
                     </h1>
-                    <FontAwesomeIcon icon={faScrewdriverWrench} className="constructionIcon" />
+                    <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
                     <h5>This page is currently under construction.</h5>
                 </div>
             </div>
@@ -38,4 +38,4 @@ const News = () => {
     )
 }
 
-export default News
+export default Skills

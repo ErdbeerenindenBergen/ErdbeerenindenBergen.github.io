@@ -11,7 +11,7 @@
   background-size: cover;
 }
 
-.leftArrow {
+.left-arrow {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -22,7 +22,7 @@
   cursor: pointer;
 }
 
-.arrowSpace :hover {
+.arrow-space :hover {
   color: white;
 }
 
@@ -32,7 +32,7 @@ h4 {
   font-family: Arial;
 }
 
-.rightArrow {
+.right-arrow {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
@@ -45,6 +45,6 @@ h4 {
 
 ;
 
-.spacingForSubtext {
+.spacing-for-subtext {
   margin-bottom: 50px;
 }

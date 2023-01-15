@@ -44,7 +44,7 @@
   .container.contact-page,
   .container.about-page,
   .container.portfolio-page,
-  .container.news-page {
+  .container.skills-page {
     
       h1 {
         display: flex;
@@ -112,7 +112,7 @@
     .container.contact-page,
     .container.about-page,
     .container.portfolio-page,
-    .container.news-page {
+    .container.skills-page {
     p {
       margin-left: 0;
       margin-right: 0;
@@ -130,7 +130,7 @@
       &.contact-page,
       &.about-page,
       &.portfolio-page,
-      &.news-page {
+      &.skills-page {
         .text-zone {
           //  margin-left:10%;
           display: flex;
