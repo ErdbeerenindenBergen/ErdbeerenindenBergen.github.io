@@ -38,7 +38,8 @@ const Contact = () => {
   }
 
   return (
-    <>
+    // <div className='scroll-yes'>
+      <>
       <div className='container contact-page'>
         <div className="text-zone">
           <h1 className="left-sided">
@@ -118,7 +119,8 @@ const Contact = () => {
           </MapContainer>
         </div>
       </div>
-    </>
+      </>
+    // </div>
   )
 }
 

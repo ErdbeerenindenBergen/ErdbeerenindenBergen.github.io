@@ -6,11 +6,13 @@
 .slide {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  // border-radius: 10px;
   padding:15px;
   background-position: center;
-  background-size: cover;
+  // background-size:cover;
 }
+
+
 
 .left-arrow {
   position: absolute;
@@ -37,14 +39,12 @@ h4 {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  right: -15%;
+  right: -10%;
   font-size: 35px;
   color: rgb(60, 54, 49);
   z-index: 1;
   cursor: pointer;
 }
-
-;
 
 .spacing-for-subtext {
   margin-bottom: 50px;

@@ -82,7 +82,7 @@ const Portfolio = () => {
                     </div>
 
                     <div>
-                        <div className='container-styles'>
+                        <div className='container-styles-portfolio'>
                             <ImageSlider slides={slides} />
                         </div>
                     </div>

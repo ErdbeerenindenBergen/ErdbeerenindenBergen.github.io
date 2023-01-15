@@ -6,10 +6,6 @@ import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-s
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const backgroundImage = {
-    backgroundImage: `url(${slides[currentIndex].url})`
-  };
-
   const goToPrevious = () => {
     const isFirstSlide = currentIndex === 0;
     const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
@@ -23,23 +19,25 @@ const ImageSlider = ({ slides }) => {
   }
 
   return (
+    <>
     <div className='slider'>
 
       <div className='arrow-space' onClick={goToPrevious}>
         <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' />
       </div>
-
-      <div style={backgroundImage} className="slide"></div>
-
-      <div className="spacing-for-subtext">
-        <h4>{slides[currentIndex].text}</h4>
-      </div>
+      
+      <img src={slides[currentIndex].url} className="slide"></img>
 
       <div className='arrow-space' onClick={goToNext}>
         <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' />
       </div>
 
     </div>
+
+<div className="spacing-for-subtext">
+<h4>{slides[currentIndex].text}</h4>
+</div>
+</>
   )
 };
 
