@@ -2,14 +2,14 @@
   .text-zone {
     position: center;
     text-align: center;
-    margin: 0 0 0 150px;
-    top: 50%;
+    margin: 40px 0 0 100px;
+    // top: 50%;
     max-height: 90%;
   }
 
   h1 {
     color: #fff;
-    font-size: min(max(30px, 6vw), 65px);
+    font-size: min(max(30px, 7vw), 65px);
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
@@ -30,7 +30,7 @@
     color: #b3b3b3;
     margin-top: 20px;
     font-weight: 400;
-    font-size: min(max(20px, 4vw), 45px);
+    font-size: min(max(23px, 3vw), 45px);
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -40,7 +40,7 @@
     color: #b3b3b3;
     margin-top: 20px;
     font-weight: 400;
-    font-size: min(max(20px, 4vw), 45px);
+    font-size: min(max(23px, 3vw), 45px);
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 2.8s backwards;
