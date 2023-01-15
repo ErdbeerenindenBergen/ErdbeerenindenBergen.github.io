@@ -156,11 +156,12 @@ h3 {
 
 @media screen and (max-width: 1200px) {
 
+
     .contact-form,
     .left-sided {
         display: flex;
         width: 100%;
-        top: 100%;
+        // top: 100%;
         margin-top: 20px;
         margin-left: 0;
         left:0;
@@ -168,15 +169,17 @@ h3 {
         //think it is margin-top with this or h1 that is making this overlap with info-map in mobile view
     }
 
-    .container {
-        margin-left: 0;
-        margin-right: 0;
+    .text-zone {
         left:0;
     }
 
     form {
         position: relative;
         width: 100%;
+    }
+
+    .leaflet-container {
+        display: none;
     }
 
     .map-wrap {
@@ -188,14 +191,9 @@ h3 {
     }
 
     .info-map {
-        position: relative;
-        display: flex;
-        flex-direction: flex-end;
-        margin-left: 0;
-        //below will center box
-        // margin: auto;
-        //below works for situating the box below contact form
-        top: 40vh;
-        left: 15%;
+        position:absolute;
+        right: 25%;
+        margin-top: 500px;
+        width: 50%;
     }
 }

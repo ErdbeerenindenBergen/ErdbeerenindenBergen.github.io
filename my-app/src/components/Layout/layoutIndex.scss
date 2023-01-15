@@ -3,7 +3,7 @@
     height: 100%;
     position: absolute;
     overflow: auto;
-  }
+    }
 
 /* width */
 ::-webkit-scrollbar {
@@ -31,7 +31,7 @@
     will-change: contents;
     // height: 90%;
     min-height: 566px;
-    position: absolute;
+    // position: absolute;
     opacity: 0;
     top: 5%;
     margin: 0 auto;
@@ -120,7 +120,7 @@
   }
   
     .container {
-      position: initial;
+      // position: initial;
       // transform: translateY (50%);
       // height: auto;
       min-height: auto;

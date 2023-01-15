@@ -26,7 +26,7 @@ const Skills = () => {
                     <h1>
                         <AnimatedLetters
                             letterClass={letterClass}
-                            strArray={['N', 'e', 'w', 's']}
+                            strArray={['S', 'k', 'i', 'l', 'l', 's']}
                             idx={15}
                         />
                     </h1>

@@ -4,6 +4,8 @@ import { useEffect, useState, React } from 'react'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './aboutIndex.scss'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 
 
 const About = () => {
@@ -60,7 +62,8 @@ const About = () => {
               idx={15}
             />
           </h1>
-
+          <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
+                    <h5>This page is currently under construction.</h5>
           <div>
             <div className='container-styles'>
               <ImageSlider slides={slides} />
