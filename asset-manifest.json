@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e05b043c.css",
-    "main.js": "/static/js/main.a03d5523.js",
+    "main.js": "/static/js/main.dd331708.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/Portrait.JPG": "/static/media/Portrait.46a933fc836020eea4b5.JPG",
     "static/media/tasteBuds4.png": "/static/media/tasteBuds4.24084b1c366a66157adf.png",
@@ -13,11 +13,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
     "main.e05b043c.css.map": "/static/css/main.e05b043c.css.map",
-    "main.a03d5523.js.map": "/static/js/main.a03d5523.js.map",
+    "main.dd331708.js.map": "/static/js/main.dd331708.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e05b043c.css",
-    "static/js/main.a03d5523.js"
+    "static/js/main.dd331708.js"
   ]
 }
