@@ -4,6 +4,8 @@ import { useEffect, useState, React } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
+import tasteBuds1 from '../../assets/images/tasteBuds1.jpg'
+import tasteBuds2 from '../../assets/images/tasteBuds2.jpg'
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -22,13 +24,13 @@ const Portfolio = () => {
 
     const slides = [
         {
-          url: "http://localhost:3000/tasteBuds-1.jpg",
+          url: tasteBuds1,
           title: "log-in", 
           text:"Designed to find the perfect place to dine. Restaurant matching and voting application using MVC pattern and RESTful APIs. Registered Taste Buds users can search for restaurants in a desired area and create scheduled events. Friends are invited via unique links to view restaurant information and submit votes. The program will record votes and calculate the winning restaurants. Utilizes Java, SpringBoot, JSON, Vue.js, Yelp Fusion API, and PostgreSQL. Above is the log-in page.",
           subtitle: "placeholder"
         },
         {
-          url: "http://localhost:3000/tasteBuds-2.jpg",
+          url: tasteBuds2,
           title: "create-account",
           text: "If you do not have an account, you can make one here.",
           subtitle: "placeholder"
