@@ -9,16 +9,15 @@
 
   h1 {
     color: #fff;
-    font-size: 56px;
-    font-size: 5vw;
+    font-size: min(max(30px, 4vw), 65px);
     margin: 0;
     font-family: 'Coolvetica';
     font-weight: 400;
 
     .portrait {
       opacity: 0;
-      min-width: 100px;
-      width: 70%;
+      min-width: 260px;
+      width: 80%;
       max-width: 450px;
       border-radius: 10%;
       height: auto;
@@ -31,7 +30,7 @@
     color: #b3b3b3;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: min(max(20px, 4vw), 45px);
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 1.8s backwards;
@@ -41,7 +40,7 @@
     color: #b3b3b3;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: min(max(20px, 4vw), 45px);
     font-family: sans-serif;
     letter-spacing: 3px;
     animation: fadeIn 1s 2.8s backwards;
@@ -53,9 +52,9 @@
   }
 
   button {
-    color: 0 0;
+    color: rgb(61,94,85);
     background-color: rgb(255, 234, 206);
-    font-size: 20px;
+    font-size: min(max(15px, 4vw), 35px);
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
@@ -67,7 +66,7 @@
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 
     &:hover {
       background: rgb(236, 147, 127);
