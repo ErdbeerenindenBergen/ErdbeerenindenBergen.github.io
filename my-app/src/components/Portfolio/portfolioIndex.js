@@ -6,6 +6,9 @@ import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
 import tasteBuds1 from '../../assets/images/tasteBuds1.jpg'
 import tasteBuds2 from '../../assets/images/tasteBuds2.jpg'
+import tasteBuds3 from '../../assets/images/tasteBuds3.png'
+import tasteBuds4 from '../../assets/images/tasteBuds4.png'
+import tbLogo from '../../assets/images/tbLogo.png'
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -32,21 +35,21 @@ const Portfolio = () => {
         {
           url: tasteBuds2,
           title: "create-account",
-          text: "If you do not have an account, you can make one here.",
+          text: "If you do not have an account, you can make one here. Duplicate usernames will trigger an error message as will a password that does not meet our minimum requirements for complexity.",
           subtitle: "placeholder"
         },
-        // {
-        //   url: "http://erdbeerenindenbergen.github.io/taste-buds-3.png",
-        //   title: "search-or-plan",
-        //   text: "After logging in, you can select whether to search for restaurants (and perhaps save some new favorites!) or to plan an event.",
-        //   subtitle: "placeholder"
-        // },
-        // {
-        //   url: "http://erdbeerenindenbergen.github.io/taste-buds-4.png",
-        //   title: "search",
-        //   text: "If you choose to search for restaurants, you may enter a city or a zipcode (the state is optional). Anytime restaurants are displayed in a list like below, individualized links will be included below the image that connect to the restaurant's yelp page and to it's google location via google maps, which is navigable. Additional information will be displayed on the right side of the image, including ratings, opening hours, etc. and a link to dial the number if you are viewing the page with a cellphone.",
-        //   subtitle: "placeholder"
-        // },
+        {
+          url: tasteBuds3,
+          title: "search-or-plan",
+          text: "After logging in, you can select whether to search for restaurants (and perhaps save some new favorites!) or to plan an event.",
+          subtitle: "placeholder"
+        },
+        {
+          url: tasteBuds4,
+          title: "search",
+          text: "If you choose to search for restaurants, you may enter a city or a zipcode (the state is optional). Anytime restaurants are displayed in a list like below, individualized links will be included below the image that connect to the restaurant's yelp page and to it's google location via google maps, which is navigable. Additional information will be displayed on the right side of the image, including ratings, opening hours, etc. and a link to dial the number if you are viewing the page with a cellphone.",
+          subtitle: "placeholder"
+        },
         // {
         //   url: "http://erdbeerenindenbergen.github.io/taste-buds-5.png",
         //   title: "search",
@@ -73,7 +76,10 @@ const Portfolio = () => {
 
                     <br></br>
 
-                    <h5>Project 1: taste buds</h5>
+                    <div className="project-title">
+                        <img src={tbLogo} class="tb-logo"></img>
+                        <h6>taste buds</h6>
+                    </div>
 
                     <div>
                         <div className='container-styles'>

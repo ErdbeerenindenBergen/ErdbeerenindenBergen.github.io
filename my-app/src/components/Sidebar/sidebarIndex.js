@@ -4,7 +4,7 @@ import { useState } from 'react'
 import LogoKB from '../../assets/images/LogoKB.png'
 import LogoSubtitleCream from '../../assets/images/LogoSubtitleCream.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faBook, faTelevision, faBars } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faBook, faTelevision, faBars, faPenFancy } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
@@ -36,8 +36,8 @@ return (
             <FontAwesomeIcon icon={faBook}  />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="news-link" to="/news" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faTelevision} />
+        <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills" onClick={() => setShowNav(false)}>
+            <FontAwesomeIcon icon={faPenFancy} />
         </NavLink>
 
     </nav>

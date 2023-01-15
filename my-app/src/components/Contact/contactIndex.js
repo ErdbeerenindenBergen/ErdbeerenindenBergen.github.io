@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className='container contact-page positionChange'>
+      <div className='container contact-page'>
         <div className="text-zone">
           <h1 className="left-sided">
             <AnimatedLetters
@@ -91,7 +91,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="center-info-map">
+        {/* <div className="center-info-map"> */}
           <div className="info-map">
             Kassi Burnett
             <br />
@@ -99,7 +99,7 @@ const Contact = () => {
             <br />
             {/* <span>burnettkassi@gmail.com</span> */}
           </div>
-        </div>
+        {/* </div> */}
 
 
         <div className="map-wrap">
