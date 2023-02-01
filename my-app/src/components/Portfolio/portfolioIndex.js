@@ -127,16 +127,38 @@ const Portfolio = () => {
 
                     <br></br>
 
-                    <div className="project-title">
-                        <img src={tbLogo} class="tb-logo"></img>
-                        <h6>taste buds</h6>
-                    </div>
+                    <div className="background-for-portfolio">
+                        <div className="project-title">
+                            <img src={tbLogo} class="tb-logo"></img>
+                            <h6>taste buds</h6>
+                        </div>
 
-                    <div>
-                        <div className='container-styles-portfolio'>
-                            <ImageSlider slides={slides} />
+                        <div>
+                            <div className='container-styles-portfolio'>
+                                <ImageSlider slides={slides} />
+                            </div>
                         </div>
                     </div>
+
+                    <div className="background-for-portfolio">
+
+                        <h6>More projects coming soon...</h6>
+
+                        {/* <div className="project-title">
+                            <img src={tbLogo} class="tb-logo"></img>
+                            <h6>taste buds</h6>
+                        </div>
+
+                        <div>
+                            <div className='container-styles-portfolio'>
+                                <ImageSlider slides={slides} />
+                            </div>
+                        </div> */}
+                    </div>
+
+                    <br/>
+                    <br/>
+                    <br/>
                     
                 </div>
             </div>
