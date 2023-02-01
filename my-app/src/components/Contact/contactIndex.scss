@@ -71,7 +71,7 @@
     .flat-button {
         color: rgb(61,94,85);
         font-weight: bold;
-        font-size: 13px;
+        font-size: 15px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
@@ -88,6 +88,7 @@
 
 .flat-button:hover {
     background-color: rgb(236, 147, 127);
+    background-color: rgb(193, 164, 141);
     color: white;
 }
 
@@ -149,7 +150,7 @@ h3 {
         font-size: 16px;
 
         span {
-            color: rgb(236, 147, 127);
+        color: rgb(236, 147, 127);
         }
     }
 }

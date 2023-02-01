@@ -7,6 +7,7 @@ import ImageSlider from '../ImageSlider/imageSliderIndex'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import familyThanksgiving from '../../assets/images/familyThanksgiving.jpg'
+import familyChristmas from '../../assets/images/familyChristmas.png'
 
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
 
   const slides = [
     {
-      url: familyThanksgiving,
+      url: familyChristmas,
       title: "family and background",
       text: "Unlike most stories about young programming professionals, mine doesn’t begin with a love of technology, but rather a lack of it. How did the daughter of a coal miner from a tiny, formerly industrial town in West Virginia become a bilingual cultural scholar and aspiring software developer who attends cybersecurity panels at NATO headquarters? The simple answer is: an unquenchable curiosity about everything, a love of languages and learning, and most importantly, persistence. I’ve been writing for as long as I can remember: songs as a performer, restaurant orders as a server, lesson plans as a teacher, poetry for Harvard, research for Oxford. But it's taken me a long time to find my calling: writing code.",
       subtitle: "place holder"
