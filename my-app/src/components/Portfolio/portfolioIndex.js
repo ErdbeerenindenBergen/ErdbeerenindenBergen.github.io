@@ -1,8 +1,6 @@
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './portfolioIndex.scss'
 import { useEffect, useState, React } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
 import tasteBuds1 from '../../assets/images/tasteBuds1.png'
 import tasteBuds2 from '../../assets/images/tasteBuds2.png'
@@ -17,6 +15,8 @@ import tasteBuds10 from '../../assets/images/tasteBuds10.png'
 import tasteBuds11 from '../../assets/images/tasteBuds11.png'
 import tasteBudsMobile from '../../assets/images/tasteBudsMobile.png'
 import COVIDCare1 from '../../assets/images/COVIDCare1.png'
+import COVIDCare2 from '../../assets/images/COVIDCare2.png'
+import COVIDCare3 from '../../assets/images/COVIDCare3.png'
 
 import tbLogo from '../../assets/images/tbLogo.png'
 import COVIDCareLogo from '../../assets/images/COVIDCareLogo.png'
@@ -114,9 +114,21 @@ const Portfolio = () => {
       const slidesCC = [
         {
           url: COVIDCare1,
-          title: "HomePage", 
+          title: "Home Page", 
           text:"Developed for the GirlDevelopIt (GDI) Hackathon, Hack4Health. Built to increase awareness of and access to long COVID resources and to help track long-term symptoms; connects user with COVID-19 statistics and NIH informational web pages; symptoms are recorded in journal entries with the date, COVID-19 test results, and any notes the user wishes to enter; utilizes Java, Spring Boot, SQL, JavaScript, Vue.JS, ElephantSQL. More preview images of this project coming soon.",
           subtitle: "placeholder"
+        },
+        {
+            url: COVIDCare2,
+            title: "Journal Entry", 
+            text:"Users can create journal entries and check symptoms from a list as well as include individual notes. We consulted a physician and specialist from the Charité to ensure that our symptom list is as accurate and all-encompassing as possible.",
+            subtitle: "placeholder"
+        },
+        {
+            url: COVIDCare3,
+            title: "Journal Details Page", 
+            text:"Users may view previously recorded journal entries and edit, add to, or delete them. Our goal was to make the app helpful for those suffering with COVID as well as for those health professionals who might treat them by providing a clear history tracker that will document symptoms over time.",
+            subtitle: "placeholder"
         }
       ];
 

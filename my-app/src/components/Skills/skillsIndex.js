@@ -32,8 +32,8 @@ const Skills = () => {
                         />
                     
                     </h1>
-                    {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-                    <h5>This page is currently under construction.</h5> */}
+                        <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
+                        <h5>This page is currently under construction.</h5>
                     <TextSphere/>
 
                 </div>
