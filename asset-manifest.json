@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.20e172d4.css",
-    "main.js": "/static/js/main.6bf9bf8d.js",
+    "main.css": "/static/css/main.5dc5a5db.css",
+    "main.js": "/static/js/main.d08ae116.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/tasteBudsMobile.png": "/static/media/tasteBudsMobile.fc241c005c7099a504e5.png",
     "static/media/familyChristmas.png": "/static/media/familyChristmas.02f8b1c279a6cfb2e818.png",
@@ -12,6 +12,8 @@
     "static/media/tasteBuds9.png": "/static/media/tasteBuds9.184b1c2544064ff49d8a.png",
     "static/media/tasteBuds7.png": "/static/media/tasteBuds7.c61aa54928075ed21897.png",
     "static/media/tasteBuds4.png": "/static/media/tasteBuds4.24084b1c366a66157adf.png",
+    "static/media/COVIDCare2.png": "/static/media/COVIDCare2.746276fe0c33db34cf89.png",
+    "static/media/COVIDCare3.png": "/static/media/COVIDCare3.57c7dd55ab6ab3eafaf1.png",
     "static/media/tasteBuds6.png": "/static/media/tasteBuds6.d9f557499c0f2fbaddf2.png",
     "static/media/tasteBuds5.png": "/static/media/tasteBuds5.9b191782ce573503bbd2.png",
     "static/media/tasteBuds3.png": "/static/media/tasteBuds3.53651f86f1caf253d510.png",
@@ -23,12 +25,12 @@
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.20e172d4.css.map": "/static/css/main.20e172d4.css.map",
-    "main.6bf9bf8d.js.map": "/static/js/main.6bf9bf8d.js.map",
+    "main.5dc5a5db.css.map": "/static/css/main.5dc5a5db.css.map",
+    "main.d08ae116.js.map": "/static/js/main.d08ae116.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.20e172d4.css",
-    "static/js/main.6bf9bf8d.js"
+    "static/css/main.5dc5a5db.css",
+    "static/js/main.d08ae116.js"
   ]
 }
