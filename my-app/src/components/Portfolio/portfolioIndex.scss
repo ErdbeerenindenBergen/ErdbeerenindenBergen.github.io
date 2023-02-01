@@ -10,7 +10,11 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: auto;
+    padding-top: 10px;
     padding-bottom: 10px;
+    background:rgb(60, 54, 49);
+    width: 60%;
 }
 
 .tb-logo {
@@ -19,7 +23,7 @@ padding-right: 10px;
 }
 
 h6 {
-    color: white;
+    color:rgb(225, 221, 218);
     font-size: 26px;
     font-family: Helvetica;
     margin: 0;

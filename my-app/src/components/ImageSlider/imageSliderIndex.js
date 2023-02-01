@@ -20,24 +20,28 @@ const ImageSlider = ({ slides }) => {
 
   return (
     <>
-    <div className='slider'>
+      <div className='slider'>
 
-      <div className='arrow-space' onClick={goToPrevious}>
-        <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' />
+        <div className='arrow-space' onClick={goToPrevious}>
+          <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' />
+        </div>
+
+        <img src={slides[currentIndex].url} className="slide"></img>
+
+        <div className='arrow-space' onClick={goToNext}>
+          <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' />
+        </div>
+
       </div>
-      
-      <img src={slides[currentIndex].url} className="slide"></img>
 
-      <div className='arrow-space' onClick={goToNext}>
-        <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' />
+      <div className="spacing-for-subtext">
+        <h4>{slides[currentIndex].text}</h4>
       </div>
-
-    </div>
-
-<div className="spacing-for-subtext">
-<h4>{slides[currentIndex].text}</h4>
-</div>
-</>
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+    </>
   )
 };
 

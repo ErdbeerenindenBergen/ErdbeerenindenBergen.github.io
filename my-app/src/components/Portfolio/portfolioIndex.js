@@ -4,10 +4,19 @@ import { useEffect, useState, React } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
-import tasteBuds1 from '../../assets/images/tasteBuds1.jpg'
-import tasteBuds2 from '../../assets/images/tasteBuds2.jpg'
+import tasteBuds1 from '../../assets/images/tasteBuds1.png'
+import tasteBuds2 from '../../assets/images/tasteBuds2.png'
 import tasteBuds3 from '../../assets/images/tasteBuds3.png'
 import tasteBuds4 from '../../assets/images/tasteBuds4.png'
+import tasteBuds5 from '../../assets/images/tasteBuds5.png'
+import tasteBuds6 from '../../assets/images/tasteBuds6.png'
+import tasteBuds7 from '../../assets/images/tasteBuds7.png'
+import tasteBuds8 from '../../assets/images/tasteBuds8.png'
+import tasteBuds9 from '../../assets/images/tasteBuds9.png'
+import tasteBuds10 from '../../assets/images/tasteBuds10.png'
+import tasteBuds11 from '../../assets/images/tasteBuds11.png'
+import tasteBudsMobile from '../../assets/images/tasteBudsMobile.png'
+
 import tbLogo from '../../assets/images/tbLogo.png'
 
 const Portfolio = () => {
@@ -50,12 +59,54 @@ const Portfolio = () => {
           text: "If you choose to search for restaurants, you may enter a city or a zipcode (the state is optional). Anytime restaurants are displayed in a list like below, individualized links will be included below the image that connect to the restaurant's yelp page and to it's google location via google maps, which is navigable. Additional information will be displayed on the right side of the image, including ratings, opening hours, etc. and a link to dial the number if you are viewing the page with a cellphone.",
           subtitle: "placeholder"
         },
-        // {
-        //   url: "http://erdbeerenindenbergen.github.io/taste-buds-5.png",
-        //   title: "search",
-        //   text: "If you choose to plan an event, you will be taken to the plan and event form page. Here you may toggle between three forms as you please. Your information is saved as you plan. You may not submit the form, however, until all required inputs are complete. Once all information is entered and you click submit, invitations will be emailed to your invitees. Step 1. Plan the date and time of your event and give a deadline for when your \"buds\" must respond to an invite.",
-        //   subtitle: "placeholder"
-        // },        
+        {
+            url: tasteBuds5,
+            title: "plan: step 1",
+            text: "If you choose to plan an event, you will be taken to the plan and event form page. Here you may toggle between three forms as you please. Your information is saved as you plan. You may not submit the form, however, until all required inputs are complete. Once all information is entered and you click submit, invitations will be emailed to your invitees. \n \n Step 1. Plan the date and time of your event and give a deadline for when your \"buds\" must respond to an invite.",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBuds6,
+            title: "plan: step 2",
+            text: "Step 2. Select your restaurants. The fork and knife icon will toggle from purple to gold (or the reverse). If the icon is gold, you have added a restaurant to your event list.",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBuds7,
+            title: "step 2",
+            text: "Step 2. Select your restaurants. The fork and knife icon will toggle from purple to gold (or the reverse). If the icon is gold, you have added a restaurant to your event list.",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBuds8,
+            title: "plan: step 3",
+            text: "Step 3. Invite your buds by entering their email addresses!",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBuds9,
+            title: "vote",
+            text: "If you are invited to vote on an event, you will receive a link via email. Click the link to open your voting form. Here you'll find a list of all the restaurants selected for the event and you can vote \"yes\" or \"no\" by clicking on the thumbs-up or thumbs-down icon. Clicking one will disable the other. The thumbs-up icon appears green for a \"yes\" vote while the thumbs-down appears red for a \"no\" vote.",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBuds10,
+            title: "event view",
+            text: "If you are an authenticated user, you may view the voting results from any event you have organized by going to the Events page. By clicking on an event, you'll see a ranked list of restaurants from most to least votes. The winning restaurant(s) will display a gold trophy below their images (we thought this would be helpful in case there is a tie!).",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBuds11,
+            title: "about",
+            text: "We included an \"About page\" so you can read more about our team.",
+            subtitle: "placeholder"
+        },
+        {
+            url: tasteBudsMobile,
+            title: "mobile",
+            text: "Finally, we ensured that our webpage was made mobile friendly. We also built all our CSS from scratch (without Bootstrap, Vuetify, etc.) so everything right down to the bars of the hamburger menu were hard-coded with care!",
+            subtitle: "placeholder"
+        },
       ];
 
     return (

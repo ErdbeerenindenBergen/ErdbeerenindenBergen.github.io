@@ -6,6 +6,7 @@ import './aboutIndex.scss'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+import familyThanksgiving from '../../assets/images/familyThanksgiving.jpg'
 
 
 const About = () => {
@@ -24,6 +25,12 @@ const About = () => {
   }, []);
 
   const slides = [
+    {
+      url: familyThanksgiving,
+      title: "family and background",
+      text: "Unlike most stories about young programming professionals, mine doesn’t begin with a love of technology, but rather a lack of it. How did the daughter of a coal miner from a tiny, formerly industrial town in West Virginia become a bilingual cultural scholar and aspiring software developer who attends cybersecurity panels at NATO headquarters? The simple answer is: an unquenchable curiosity about everything, a love of languages and learning, and most importantly, persistence. I’ve been writing for as long as I can remember: songs as a performer, restaurant orders as a server, lesson plans as a teacher, poetry for Harvard, research for Oxford. But it's taken me a long time to find my calling: writing code.",
+      subtitle: "place holder"
+    },
     {
       url: "http://erdbeerenindenbergen.github.io/image-1.jpg",
       title: "teaching", 
@@ -48,7 +55,7 @@ const About = () => {
       text: "In 2019, I was selected alongside a NY Times journalist as one of only 2 nominees by the German and Belgian Fulbright Commissions for a week-long seminar at the EU and NATO headquarters. While there, I attended a global cybersecurity workshop and discussed government responses to cyberterrorism.",
       subtitle: "place holder"
     }
-    //add pic for Sierra Club? - need to show experience!
+    //add pic for Sierra Club?
   ];
 
   return (
@@ -64,17 +71,23 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-                    <h5>This page is currently under construction.</h5>
+          {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
+                    <h5>This page is currently under construction.</h5> */}
           <div>
             <div className='container-styles'>
               <ImageSlider slides={slides} />
             </div>
           </div>
 
-          <p className='with-margin'>
+          {/* <p className='with-margin'>
             Unlike most stories about young programming professionals, mine doesn’t begin with a love of technology, but rather a lack of it. How did the daughter of a coal miner from a tiny, formerly industrial town in West Virginia become a bilingual cultural scholar and aspiring software developer who attends cybersecurity panels at NATO headquarters? The simple answer is: an unquenchable curiosity about everything, a love of languages and learning, and most importantly, persistence. I’ve been writing for as long as I can remember: songs as a performer, restaurant orders as a server, lesson plans as a teacher, poetry for Harvard, research for Oxford. But it's taken me a long time to find my calling: writing code.
-          </p>
+          </p> */}
+
+          <br/>
+          <br/>
+          <br/>
+          <br/>
+          <br/>
 
         </div>
         </div>

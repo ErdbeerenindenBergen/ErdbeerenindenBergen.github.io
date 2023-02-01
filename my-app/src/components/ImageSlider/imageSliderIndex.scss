@@ -6,13 +6,13 @@
 .slide {
   width: 100%;
   height: 100%;
+  padding-top: 10px;
   // border-radius: 10px;
-  padding:15px;
+  //below used to fix image display issue but was causing problems with the navigation arrows
+  // padding:15px;
   background-position: center;
   // background-size:cover;
 }
-
-
 
 .left-arrow {
   position: absolute;
@@ -30,9 +30,10 @@
 }
 
 h4 {
-  font-size: 15px;
-  color: rgb(255, 255, 255);
+  font-size: 18px;
+  color:rgb(225, 221, 218);
   font-family: Arial;
+  font-weight: normal;
 }
 
 .right-arrow {
@@ -48,4 +49,7 @@ h4 {
 
 .spacing-for-subtext {
   margin-bottom: 50px;
+  margin-top: 10px;
+  background:rgb(60, 54, 49);
+  padding: 10px 20px;
 }
