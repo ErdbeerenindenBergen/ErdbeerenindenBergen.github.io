@@ -16,8 +16,10 @@ import tasteBuds9 from '../../assets/images/tasteBuds9.png'
 import tasteBuds10 from '../../assets/images/tasteBuds10.png'
 import tasteBuds11 from '../../assets/images/tasteBuds11.png'
 import tasteBudsMobile from '../../assets/images/tasteBudsMobile.png'
+import COVIDCare1 from '../../assets/images/COVIDCare1.png'
 
 import tbLogo from '../../assets/images/tbLogo.png'
+import COVIDCareLogo from '../../assets/images/COVIDCareLogo.png'
 
 const Portfolio = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -109,6 +111,15 @@ const Portfolio = () => {
         },
       ];
 
+      const slidesCC = [
+        {
+          url: COVIDCare1,
+          title: "HomePage", 
+          text:"Developed for the GirlDevelopIt (GDI) Hackathon, Hack4Health. Built to increase awareness of and access to long COVID resources and to help track long-term symptoms; connects user with COVID-19 statistics and NIH informational web pages; symptoms are recorded in journal entries with the date, COVID-19 test results, and any notes the user wishes to enter; utilizes Java, Spring Boot, SQL, JavaScript, Vue.JS, ElephantSQL. More preview images of this project coming soon.",
+          subtitle: "placeholder"
+        }
+      ];
+
     return (
         <>
             <div className='container about-page'>
@@ -142,8 +153,22 @@ const Portfolio = () => {
 
                     <div className="background-for-portfolio">
 
-                        <h6>More projects coming soon...</h6>
+                        {/* <h6>More projects coming soon...</h6> */}
 
+                         <div className="project-title">
+                            <img src={COVIDCareLogo} class="tb-logo"></img>
+                            <h6>COVID Care</h6>
+                        </div>
+
+                        <div>
+                            <div className='container-styles-portfolio'>
+                                <ImageSlider slides={slidesCC} />
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div className="background-for-portfolio">
+                        <h6>More project overviews coming soon...</h6>
                         {/* <div className="project-title">
                             <img src={tbLogo} class="tb-logo"></img>
                             <h6>taste buds</h6>
