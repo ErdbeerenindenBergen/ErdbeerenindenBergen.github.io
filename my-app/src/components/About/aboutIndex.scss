@@ -6,46 +6,12 @@
     height: auto;
     object-fit: cover;
     margin: 0 auto;
-
-    // img {
-    //     border-radius: 10%;
-    //   }
 }
-
-
-
-.container-styles {
-    margin: 0 auto;
-    // img {
-    //     min-width: 230px;
-    //     width: 500px;
-    //     height: 400px;
-    //     object-fit: cover;
-    //     // max-width: 450px;
-    //     background-size: cover;
-    //     // overflow: hidden;
-    //   }
-}
-
-// .scroll-yes{
-//     overflow-y:auto; 
-//     height: 130%;
-// }
 
 @media screen and (max-width: 1200px) {
     .container-styles {
         margin: 0 auto;
         width: 90%;
-        
-        // img {
-        //     min-width: 230px;
-        //     width: 30vw;
-        //     height: 30vw;
-        //     object-fit: cover;
-        //     // max-width: 450px;
-        //     background-size: cover;
-        //     // overflow: hidden;
-        //   }
     }
 
     p {
