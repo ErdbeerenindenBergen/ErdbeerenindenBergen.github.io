@@ -3,6 +3,7 @@
     height: 100%;
     position: absolute;
     overflow: auto;
+    padding-top: 3%;
     }
 
 /* width */
@@ -121,7 +122,7 @@
   
     .container {
       // position: initial;
-      // transform: translateY (50%);
+      transform: translateY (50%);
       // height: auto;
       min-height: auto;
       margin-top: 5%;

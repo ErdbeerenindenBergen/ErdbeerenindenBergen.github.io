@@ -1,8 +1,9 @@
-import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
-import './skillsIndex.scss'
-import React, { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
+import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex';
+import './skillsIndex.scss';
+import React, { useEffect, useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+import TextSphere from '../TextSphere/textSphereIndex';
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -29,9 +30,12 @@ const Skills = () => {
                             strArray={['S', 'k', 'i', 'l', 'l', 's']}
                             idx={15}
                         />
+                    
                     </h1>
-                    <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-                    <h5>This page is currently under construction.</h5>
+                    {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
+                    <h5>This page is currently under construction.</h5> */}
+                    <TextSphere/>
+
                 </div>
             </div>
         </>

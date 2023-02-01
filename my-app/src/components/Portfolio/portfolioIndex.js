@@ -121,9 +121,9 @@ const Portfolio = () => {
                         />
                     </h1>
 
-                    <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
+                    {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
 
-                    <h5>This page is currently under construction.</h5>
+                    <h5>This page is currently under construction.</h5> */}
 
                     <br></br>
 

@@ -1,0 +1,48 @@
+/* Importing google font  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&display=swap');
+
+.text-sphere {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    // display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.tagcloud {
+    display: inline-block;
+    top: 0;
+    left: 0;
+    margin: auto;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 1.5em;
+}
+
+/* Change color of each text in sphere on hover   */
+.tagcloud--item {
+    color: rgb(255, 255, 255);
+    // text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #f8b2a5;
+}
+
+@media screen and (max-width: 1200px) {
+
+.text-sphere {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    }
+}
