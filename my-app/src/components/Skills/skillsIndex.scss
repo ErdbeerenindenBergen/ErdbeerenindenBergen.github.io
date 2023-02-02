@@ -21,14 +21,6 @@ h5 {
     background: none;
 }
 
-.tagcloud {
-    display: inline-block;
-    margin: auto;
-    font-family: 'Helvetica';
-    font-weight: 600;
-    letter-spacing: 0.0625em;
-    font-size: 2em;
-}
 
 .tagcloud--item {
     color: rgb(255, 255, 255);
@@ -39,14 +31,47 @@ h5 {
     color: #f8b2a5;
 }
 
-@media screen and (max-width: 1200px) {
+.skills {
+    margin: auto;
+    width: 100%;
+}
 
-.text-sphere {
-    position: relative;
-    top: 0;
-    display: flex;
+.tagcloud {
+    // display: inline-block;
+    margin: auto;
     justify-content: center;
     align-items: center;
-    background: none;
-    }
+    font-family: 'Helvetica';
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 2em;
+    // radius: min(80vw, 800px); 
+}
+
+.text-sphere-container-mobile {
+    display: none;
+}
+
+.mobile-sparkles{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+
+.text-sphere-container-mobile {
+    display: unset;
+}
+
+.text-sphere-container {
+    display: none;
+}
+
+.tagcloud {
+    font-size: 1.3em;
+}
+
+.regular-sparkles {
+    display: none;
+}
+
 }

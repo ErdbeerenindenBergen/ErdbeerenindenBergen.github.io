@@ -163,12 +163,10 @@ h3 {
     .left-sided {
         display: flex;
         width: 100%;
-        // top: 100%;
         margin-top: 20px;
         margin-left: 0;
         left:0;
         margin-right: 0;
-        //think it is margin-top with this or h1 that is making this overlap with info-map in mobile view
     }
 
     .text-zone {
