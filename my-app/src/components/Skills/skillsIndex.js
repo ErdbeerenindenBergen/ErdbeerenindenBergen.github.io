@@ -111,8 +111,7 @@ const Skills = () => {
                             // uncomment the line below to make resume automatically download
                             // download="KassiBurnettResume" 
                             target='_blank'>
-                                Download My Resume
-
+                                View My Resume
                             </a>
                         </div>
                     </div>
