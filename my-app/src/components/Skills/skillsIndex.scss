@@ -52,26 +52,99 @@ h5 {
     display: none;
 }
 
-.mobile-sparkles{
+.mobile-sparkles {
     display: none;
 }
+
+
+// .button {
+//     background-color: rgb(61, 94, 85);
+//     font-weight: bold;
+//     font-size: 15px;
+//     letter-spacing: 3px;
+//     text-decoration: none;
+//     padding: 8px 10px;
+//     border: none;
+//     border: 1.5px solid white;
+//     border-radius: 4px;
+//     color: rgb(255, 234, 206);
+//     text-transform: uppercase;
+//     text-align: center;
+//     margin-right: 10px;
+// }
+
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+.button a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(105, 154, 141);
+    display: block;
+    position: relative;
+    padding: 15px 40px;
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 1px 0px #000;
+    filter: dropshadow(color=#000, offx=0px, offy=1px);
+
+    -webkit-box-shadow: inset 0 1px 0 rgb(105, 154, 141), 0 10px 0 rgb(4, 60, 45);
+    -moz-box-shadow: inset 0 1px 0 rgb(105, 154, 141), 0 10px 0 rgb(4, 60, 45);
+    box-shadow: inset 0 1px 0 rgb(105, 154, 141), 0 10px 0 rgb(4, 60, 45);
+
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.button a:active {
+    top: 10px;
+
+
+    -webkit-box-shadow: inset 0 1px 0 rgb(105, 154, 141), inset 0 -3px 0 rgb(4, 60, 45);
+    -moz-box-shadow: inset 0 1px 0 rgb(105, 154, 141), inset 0 -3pxpx 0 rgb(4, 60, 45);
+    box-shadow: inset 0 1px 0 rgb(105, 154, 141), inset 0 -3px 0 rgb(4, 60, 45);
+}
+
+.button:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    position: absolute;
+    bottom: -15px;
+    left: -4px;
+    z-index: -1;
+    background-color: rgb(31, 61, 59);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
 
 @media screen and (max-width: 1200px) {
 
-.text-sphere-container-mobile {
-    display: unset;
-}
+    .text-sphere-container-mobile {
+        display: unset;
+    }
 
-.text-sphere-container {
-    display: none;
-}
+    .text-sphere-container {
+        display: none;
+    }
 
-.tagcloud {
-    font-size: 1.3em;
-}
+    .tagcloud {
+        font-size: 1.3em;
+    }
 
-.regular-sparkles {
-    display: none;
-}
+    .regular-sparkles {
+        display: none;
+    }
 
 }

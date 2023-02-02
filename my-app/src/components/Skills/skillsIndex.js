@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 // import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { TagCloud } from "@frank-mayer/react-tag-cloud";
 import Sparkles from 'react-sparkle';
+import resume from '../../assets/images/resume.pdf';
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -103,6 +104,17 @@ const Skills = () => {
                             fadeOutSpeed={10}
                             flicker={false}
                         />
+                    </div>
+                    <div onTouchStart="">
+                        <div className="button">
+                            <a href={resume} 
+                            // uncomment the line below to make resume automatically download
+                            // download="KassiBurnettResume" 
+                            target='_blank'>
+                                Download My Resume
+
+                            </a>
+                        </div>
                     </div>
 
                 </div>
