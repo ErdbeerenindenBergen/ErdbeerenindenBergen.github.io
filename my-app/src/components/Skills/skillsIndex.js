@@ -1,9 +1,10 @@
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex';
 import './skillsIndex.scss';
 import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { TagCloud } from "@frank-mayer/react-tag-cloud";
+import Sparkle from 'react-sparkle';
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -36,31 +37,35 @@ const Skills = () => {
                     {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
                     <h5>This page is currently under construction.</h5> */}
 
-                    <TagCloud
-                    options={(w: Window & typeof globalThis): TagCloudOptions => ({
-                            radius: Math.min(500) / 2,
-                            maxSpeed: "normal",
-                        })} 
-                        class="tagcloud text-sphere">
-                        {[
-                            "HTML",
-                            "CSS",
-                            "SASS",
-                            "JavaScript",
-                            "React",
-                            "Vue",
-                            "Java",
-                            "IntelliJ",
-                            "Unit Testing",
-                            "GIT",
-                            "GITHUB",
-                            "Spring Boot",
-                            "PostgreSQL",
-                            "Responsive Design",
-                            "E/R Diagrams",
-                            "Integration Testing"
-                        ]}
-                    </TagCloud>
+                    <div className="skills">
+                        <TagCloud
+                            options={(w: Window & typeof globalThis): TagCloudOptions => ({
+                                radius: Math.min(500) / 2,
+                                maxSpeed: "slow",
+                            })}
+                            class="tagcloud text-sphere">
+                            {[
+                                "HTML",
+                                "CSS",
+                                "SASS",
+                                "JavaScript",
+                                "React",
+                                "Vue",
+                                "Java",
+                                "IntelliJ",
+                                "Unit Testing",
+                                "GIT",
+                                "GITHUB",
+                                "Spring Boot",
+                                "PostgreSQL",
+                                "Responsive Design",
+                                "E/R Diagrams",
+                                "Integration Testing"
+                            ]}
+
+                        </TagCloud>
+                        <Sparkle />
+                    </div>
 
                 </div>
             </div>
