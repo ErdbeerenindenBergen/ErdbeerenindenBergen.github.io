@@ -38,28 +38,28 @@ const Portfolio = () => {
 
     const slides = [
         {
-          url: tasteBuds1,
-          title: "log-in", 
-          text:"Designed to find the perfect place to dine. Restaurant matching and voting application using MVC pattern and RESTful APIs. Registered Taste Buds users can search for restaurants in a desired area and create scheduled events. Friends are invited via unique links to view restaurant information and submit votes. The program will record votes and calculate the winning restaurants. Utilizes Java, SpringBoot, JSON, Vue.js, Yelp Fusion API, and PostgreSQL. Above is the log-in page.",
-          subtitle: "placeholder"
+            url: tasteBuds1,
+            title: "log-in",
+            text: "Designed to find the perfect place to dine. Restaurant matching and voting application using MVC pattern and RESTful APIs. Registered Taste Buds users can search for restaurants in a desired area and create scheduled events. Friends are invited via unique links to view restaurant information and submit votes. The program will record votes and calculate the winning restaurants. Utilizes Java, SpringBoot, JSON, Vue.js, Yelp Fusion API, and PostgreSQL. Above is the log-in page.",
+            subtitle: "placeholder"
         },
         {
-          url: tasteBuds2,
-          title: "create-account",
-          text: "If you do not have an account, you can make one here. Duplicate usernames will trigger an error message as will a password that does not meet our minimum requirements for complexity.",
-          subtitle: "placeholder"
+            url: tasteBuds2,
+            title: "create-account",
+            text: "If you do not have an account, you can make one here. Duplicate usernames will trigger an error message as will a password that does not meet our minimum requirements for complexity.",
+            subtitle: "placeholder"
         },
         {
-          url: tasteBuds3,
-          title: "search-or-plan",
-          text: "After logging in, you can select whether to search for restaurants (and perhaps save some new favorites!) or to plan an event.",
-          subtitle: "placeholder"
+            url: tasteBuds3,
+            title: "search-or-plan",
+            text: "After logging in, you can select whether to search for restaurants (and perhaps save some new favorites!) or to plan an event.",
+            subtitle: "placeholder"
         },
         {
-          url: tasteBuds4,
-          title: "search",
-          text: "If you choose to search for restaurants, you may enter a city or a zipcode (the state is optional). Anytime restaurants are displayed in a list like below, individualized links will be included below the image that connect to the restaurant's yelp page and to it's google location via google maps, which is navigable. Additional information will be displayed on the right side of the image, including ratings, opening hours, etc. and a link to dial the number if you are viewing the page with a cellphone.",
-          subtitle: "placeholder"
+            url: tasteBuds4,
+            title: "search",
+            text: "If you choose to search for restaurants, you may enter a city or a zipcode (the state is optional). Anytime restaurants are displayed in a list like below, individualized links will be included below the image that connect to the restaurant's yelp page and to it's google location via google maps, which is navigable. Additional information will be displayed on the right side of the image, including ratings, opening hours, etc. and a link to dial the number if you are viewing the page with a cellphone.",
+            subtitle: "placeholder"
         },
         {
             url: tasteBuds5,
@@ -109,32 +109,32 @@ const Portfolio = () => {
             text: "Finally, we ensured that our webpage was made mobile friendly. We also built all our CSS from scratch (without Bootstrap, Vuetify, etc.) so everything right down to the bars of the hamburger menu were hard-coded with care!",
             subtitle: "placeholder"
         },
-      ];
+    ];
 
-      const slidesCC = [
+    const slidesCC = [
         {
-          url: COVIDCare1,
-          title: "Home Page", 
-          text:"Developed for the GirlDevelopIt (GDI) Hackathon, Hack4Health. Built to increase awareness of and access to long COVID resources and to help track long-term symptoms; connects user with COVID-19 statistics and NIH informational web pages; symptoms are recorded in journal entries with the date, COVID-19 test results, and any notes the user wishes to enter; utilizes Java, Spring Boot, SQL, JavaScript, Vue.JS, ElephantSQL. More preview images of this project coming soon.",
-          subtitle: "placeholder"
+            url: COVIDCare1,
+            title: "Home Page",
+            text: "Developed for the GirlDevelopIt (GDI) Hackathon, Hack4Health. Built to increase awareness of and access to long COVID resources and to help track long-term symptoms; connects user with COVID-19 statistics and NIH informational web pages; symptoms are recorded in journal entries with the date, COVID-19 test results, and any notes the user wishes to enter; utilizes Java, Spring Boot, SQL, JavaScript, Vue.JS, ElephantSQL. More preview images of this project coming soon.",
+            subtitle: "placeholder"
         },
         {
             url: COVIDCare2,
-            title: "Journal Entry", 
-            text:"Users can create journal entries and check symptoms from a list as well as include individual notes. We consulted a physician and specialist from the Charité to ensure that our symptom list is as accurate and all-encompassing as possible.",
+            title: "Journal Entry",
+            text: "Users can create journal entries and check symptoms from a list as well as include individual notes. We consulted a physician and specialist from the Charité to ensure that our symptom list is as accurate and all-encompassing as possible.",
             subtitle: "placeholder"
         },
         {
             url: COVIDCare3,
-            title: "Journal Details Page", 
-            text:"Users may view previously recorded journal entries and edit, add to, or delete them. Our goal was to make the app helpful for those suffering with COVID as well as for those health professionals who might treat them by providing a clear history tracker that will document symptoms over time.",
+            title: "Journal Details Page",
+            text: "Users may view previously recorded journal entries and edit, add to, or delete them. Our goal was to make the app helpful for those suffering with COVID as well as for those health professionals who might treat them by providing a clear history tracker that will document symptoms over time.",
             subtitle: "placeholder"
         }
-      ];
+    ];
 
     return (
         <>
-            <div className='container about-page'>
+            <div className='container portfolio-page'>
                 <div className="text-zone">
                     <h1>
                         <AnimatedLetters
@@ -167,7 +167,7 @@ const Portfolio = () => {
 
                         {/* <h6>More projects coming soon...</h6> */}
 
-                         <div className="project-title">
+                        <div className="project-title">
                             <img src={COVIDCareLogo} class="tb-logo"></img>
                             <h6>COVID Care</h6>
                         </div>
@@ -176,7 +176,7 @@ const Portfolio = () => {
                             <div className='container-styles-portfolio'>
                                 <ImageSlider slides={slidesCC} />
                             </div>
-                        </div> 
+                        </div>
                     </div>
 
                     <div className="background-for-portfolio">
@@ -193,10 +193,10 @@ const Portfolio = () => {
                         </div> */}
                     </div>
 
-                    <br/>
-                    <br/>
-                    <br/>
-                    
+                    <br />
+                    <br />
+                    <br />
+
                 </div>
             </div>
         </>

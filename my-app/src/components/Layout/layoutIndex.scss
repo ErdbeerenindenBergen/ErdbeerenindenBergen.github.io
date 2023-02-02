@@ -1,10 +1,10 @@
 .page {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    overflow: auto;
-    padding-top: 3%;
-    }
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: auto;
+  padding-top: 3%;
+}
 
 /* width */
 ::-webkit-scrollbar {
@@ -14,7 +14,7 @@
 /* Track */
 ::-webkit-scrollbar-track {
   background: white;
-  border:none;
+  border: none;
   border-radius: 5px;
 }
 
@@ -23,153 +23,167 @@
   background: lightgray;
   border-radius: 5px;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
   background: grey;
 }
-  
-  .container {
-    width: 100%;
-    will-change: contents;
-    // height: 90%;
-    min-height: 566px;
-    // position: absolute;
-    opacity: 0;
-    top: 5%;
-    margin: 0 auto;
-    z-index: 1;
-    transform-style: preserve-3d;
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+
+.container {
+  width: 100%;
+  will-change: contents;
+  // height: 90%;
+  min-height: 566px;
+  // position: absolute;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+}
+
+.container.contact-page,
+.container.about-page,
+.container.portfolio-page,
+.container.skills-page {
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 53px;
+    font-family: 'Coolvetica';
+    //color of all headers by default
+    color: rgb(236, 147, 127);
+    color: rgb(193, 164, 141);
+    font-weight: 400;
+    margin-top: 0;
+    position: relative;
+    margin-bottom: 20px;
+    text-align: auto;
   }
-  
+
+  p {
+    font-size: 18px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 300;
+    max-width: fit-content;
+    margin: auto;
+    margin-top: 120px;
+    margin-right: 15%;
+    margin-left: 15%;
+    text-align: justify;
+    animation: pulse 1s;
+
+    &:nth-of-type(1) {
+      animation-delay: 1.1s;
+    }
+
+    &:nth-of-type(2) {
+      animation-delay: 1.2s;
+    }
+
+    &:nth-of-type(3) {
+      animation-delay: 1.3s;
+    }
+  }
+
+  .text-zone {
+    position: absolute;
+    text-align: center;
+    // left: 10%;
+    left: 130px;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .page {
+    position: absolute;
+    // overflow: auto;
+  }
+
+  //just changes this to try and center portfolio page
+  .container.portfolio-page {
+    .text-zone {
+      left: unset;
+      right: unset;
+      margin-left: auto;
+    }
+
+  }
+
+  .container.home-page,
   .container.contact-page,
   .container.about-page,
   .container.portfolio-page,
   .container.skills-page {
-    
-      h1 {
-        display: flex;
-        justify-content: center;
-        font-size: 53px;
-        font-family: 'Coolvetica';
-        //color of all headers by default
-        color: rgb(236, 147, 127);
-        color: rgb(193, 164, 141);
-        font-weight: 400;
-        margin-top: 0;
-        position: relative;
-        margin-bottom: 20px;
-        text-align: auto;
-      }
-  
-      p {
-        font-size: 18px;
-        color: #fff;
-        font-family: sans-serif;
-        font-weight: 300;
-        max-width: fit-content;
-        margin: auto;
-        margin-top: 120px;
-        margin-right: 15%;
-        margin-left:15%;
-        text-align: justify;
-        animation: pulse 1s;
-        &:nth-of-type(1) {
-          animation-delay: 1.1s;
-        }
-        &:nth-of-type(2) {
-          animation-delay: 1.2s;
-        }
-        &:nth-of-type(3) {
-          animation-delay: 1.3s;
-        }
-      }
-  
-    .text-zone {
-      position: absolute;
-      text-align: center;
-      // left: 10%;
-      left: 130px;
-      right: 30px;
-      top: 50%;
-      transform: translateY(-50%);
-      vertical-align: middle;
-      display: table-cell;
-      max-height: 90%;
-    }
-  
-    .text-animate-hover {
-      &:hover {
-        color: #fff;
-      }
-    }
-  }
-  
-  @media screen and (max-width: 1200px) {
-    .page {
-      position: absolute;
-      // overflow: auto;
-    }
-
-    .container.home-page,
-    .container.contact-page,
-    .container.about-page,
-    .container.portfolio-page,
-    .container.skills-page {
     p {
       margin-left: 0;
       margin-right: 0;
     }
   }
-  
-    .container {
-      // position: initial;
-      transform: translateY (50%);
-      // height: auto;
-      min-height: auto;
-      margin-top: 5%;
-  
-      &.home-page,
-      &.contact-page,
-      &.about-page,
-      &.portfolio-page,
-      &.skills-page {
-        .text-zone {
-          //  margin-left:10%;
-          display: flex;
-          transform: none;
-          width: 75%;
-          display: block;
-          padding: 10px;
-          box-sizing: border-box;
-          left: 0px;
-          right: 0px;
-          margin: auto;
-        }
-      }
-  
-      &.portfolio-page {
-        width: 100%;
-        padding: 20px;
+
+  .container {
+    // position: initial;
+    transform: translateY (50%);
+    // height: auto;
+    min-height: auto;
+    margin-top: 5%;
+
+    &.home-page,
+    &.contact-page,
+    &.about-page,
+    &.portfolio-page,
+    &.skills-page {
+      .text-zone {
+        //  margin-left:10%;
+        display: flex;
+        transform: none;
+        width: 90%;
+        display: block;
+        padding: 10px;
         box-sizing: border-box;
-  
-        h1.page-title {
-          margin-left: 20px;
-          margin-top: 20px;
-        }
-  
-        .image-box {
-          height: 200px;
-          max-width: calc(50% - 10px);
-        }
+        left: 0px;
+        right: 0px;
+        margin: auto;
       }
+
     }
-  
-    .stage-cube-cont {
-      display: flex;
-      position: initial;
+
+    &.portfolio-page {
       width: 100%;
-      height: 0%;
-      // overflow: auto;
+      // box-sizing: border-box;
+
+      h1.page-title {
+        margin-left: 20px;
+        margin-top: 20px;
+      }
+
+      .image-box {
+        height: 200px;
+        max-width: calc(50% - 10px);
+      }
     }
   }
+
+  .stage-cube-cont {
+    display: flex;
+    position: initial;
+    width: 100%;
+    height: 0%;
+    // overflow: auto;
+  }
+}
