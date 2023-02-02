@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import './textSphereIndex.scss';
-import TagCloud from "TagCloud";
+import { TagCloud } from "@frank-mayer/react-tag-cloud";
 
 const TextSphere = () => {
   // Animation settings for Text Cloud
   useEffect(() => {
     return () => {
-      const container = ".tagcloud";
+      const tagCloudContainer = ".tagcloud";
       const texts = [
         "HTML",
         "CSS",
@@ -28,12 +28,12 @@ const TextSphere = () => {
 
       const options = {
         radius: 300,
-        maxSpeed: "normal",
+        maxSpeed: "slow",
         initSpeed: "normal",
         keep: true,
       };
 
-      TagCloud(container, texts, options);
+      TagCloud(tagCloudContainer, texts, options);
     };
   }, []);
 

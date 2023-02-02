@@ -9,3 +9,44 @@ h5 {
     font-size: 26px;
     font-family: Helvetica;
 }
+
+.text-sphere {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.tagcloud {
+    display: inline-block;
+    margin: auto;
+    font-family: 'Helvetica';
+    font-weight: 600;
+    letter-spacing: 0.0625em;
+    font-size: 2em;
+}
+
+.tagcloud--item {
+    color: rgb(255, 255, 255);
+    // text-transform: uppercase;
+}
+
+.tagcloud--item:hover {
+    color: #f8b2a5;
+}
+
+@media screen and (max-width: 1200px) {
+
+.text-sphere {
+    position: relative;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    }
+}

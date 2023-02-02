@@ -3,7 +3,7 @@ import './skillsIndex.scss';
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
-import TextSphere from '../TextSphere/textSphereIndex';
+import { TagCloud } from "@frank-mayer/react-tag-cloud";
 
 const Skills = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -30,11 +30,37 @@ const Skills = () => {
                             strArray={['S', 'k', 'i', 'l', 'l', 's']}
                             idx={15}
                         />
-                    
+
                     </h1>
-                        <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-                        <h5>This page is currently under construction.</h5>
-                    <TextSphere/>
+
+                    {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
+                    <h5>This page is currently under construction.</h5> */}
+
+                    <TagCloud
+                    options={(w: Window & typeof globalThis): TagCloudOptions => ({
+                            radius: Math.min(500) / 2,
+                            maxSpeed: "normal",
+                        })} 
+                        class="tagcloud text-sphere">
+                        {[
+                            "HTML",
+                            "CSS",
+                            "SASS",
+                            "JavaScript",
+                            "React",
+                            "Vue",
+                            "Java",
+                            "IntelliJ",
+                            "Unit Testing",
+                            "GIT",
+                            "GITHUB",
+                            "Spring Boot",
+                            "PostgreSQL",
+                            "Responsive Design",
+                            "E/R Diagrams",
+                            "Integration Testing"
+                        ]}
+                    </TagCloud>
 
                 </div>
             </div>
