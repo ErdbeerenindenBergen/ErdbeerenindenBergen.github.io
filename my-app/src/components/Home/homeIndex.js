@@ -38,7 +38,7 @@ const Home = () => {
           <br/>
           <h1>
             <img src={Portrait} alt="portrait" className="portrait" />
-            <br />
+            <br/>
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
