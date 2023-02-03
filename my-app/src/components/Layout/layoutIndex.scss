@@ -31,9 +31,7 @@
 .container {
   width: 100%;
   will-change: contents;
-  // height: 90%;
   min-height: 566px;
-  // position: absolute;
   opacity: 0;
   top: 5%;
   margin: 0 auto;
@@ -53,7 +51,7 @@
     justify-content: center;
     font-size: 53px;
     font-family: 'Coolvetica';
-    //color of all headers by default
+    //color of all header text by default
     color: rgb(236, 147, 127);
     color: rgb(193, 164, 141);
     font-weight: 400;
@@ -92,7 +90,6 @@
   .text-zone {
     position: absolute;
     text-align: center;
-    // left: 10%;
     left: 130px;
     right: 30px;
     top: 50%;
@@ -112,17 +109,6 @@
 @media screen and (max-width: 1200px) {
   .page {
     position: absolute;
-    // overflow: auto;
-  }
-
-  //just changes this to try and center portfolio page
-  .container.portfolio-page {
-    .text-zone {
-      left: unset;
-      right: unset;
-      margin-left: auto;
-    }
-
   }
 
   .container.home-page,
@@ -137,9 +123,7 @@
   }
 
   .container {
-    // position: initial;
     transform: translateY (50%);
-    // height: auto;
     min-height: auto;
     margin-top: 5%;
 
@@ -149,7 +133,6 @@
     &.portfolio-page,
     &.skills-page {
       .text-zone {
-        //  margin-left:10%;
         display: flex;
         transform: none;
         width: 90%;
@@ -165,7 +148,6 @@
 
     &.portfolio-page {
       width: 100%;
-      // box-sizing: border-box;
 
       h1.page-title {
         margin-left: 20px;
@@ -184,6 +166,5 @@
     position: initial;
     width: 100%;
     height: 0%;
-    // overflow: auto;
   }
 }

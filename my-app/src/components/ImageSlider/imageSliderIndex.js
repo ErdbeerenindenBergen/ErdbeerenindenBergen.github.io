@@ -37,10 +37,10 @@ const ImageSlider = ({ slides }) => {
       <div className="spacing-for-subtext">
         <h4>{slides[currentIndex].text}</h4>
       </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
+      <br />
+      <br />
+      <br />
+      <br />
     </>
   )
 };

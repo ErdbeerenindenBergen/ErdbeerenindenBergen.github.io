@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'react'
 import Portrait from '../../assets/images/Portrait.JPG'
-// import SquarePortrait from '../../assets/images/SquarePortrait.JPG'
 import { useNavigate } from 'react-router-dom'
-// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './homeIndex.scss'
 import React from "react"
@@ -39,11 +37,6 @@ const Home = () => {
           <br/>
           <br/>
           <h1>
-            {/* <span className={letterClass}>H</span>
-            <span className={`${letterClass} _12`}>i,</span>
-            <br />
-            <span className={`${letterClass} _13`}>I</span>
-            <span className={`${letterClass} _14`}>'m</span> */}
             <img src={Portrait} alt="portrait" className="portrait" />
             <br />
             <AnimatedLetters

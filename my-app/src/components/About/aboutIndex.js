@@ -1,6 +1,4 @@
 import { useEffect, useState, React } from 'react'
-// import { faAngular, faCss3, faGitAlt, faHtml5, faJsSquare, faReact } from '@fortawesome/free-brands-svg-icons'
-// import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './aboutIndex.scss'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
@@ -34,7 +32,7 @@ const About = () => {
     },
     {
       url: "http://erdbeerenindenbergen.github.io/image-1.jpg",
-      title: "teaching", 
+      title: "teaching",
       text: "During my almost decade-long teaching career, I delivered over $4.1M in instructional services to 1700+ students and received an evaluation rating of 4.9 out of 5 across 47 courses with 3 different universities.",
       subtitle: "Here, I am teaching a seminar titled \"Animal Cultures\" at TU Darmstadt"
     },
@@ -56,40 +54,38 @@ const About = () => {
       text: "In 2019, I was selected alongside a NY Times journalist as one of only 2 nominees by the German and Belgian Fulbright Commissions for a week-long seminar at the EU and NATO headquarters. While there, I attended a global cybersecurity workshop and discussed government responses to cyberterrorism.",
       subtitle: "place holder"
     }
-    //add pic for Sierra Club?
   ];
 
   return (
     <div className='scroll-yes'>
-    <>
-      <div className="container about-page">
-        <div className="text-zone">
+      <>
+        <div className="container about-page">
+          <div className="text-zone">
 
-          <h1>
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-              idx={15}
-            />
-          </h1>
-          {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-                    <h5>This page is currently under construction.</h5> */}
-          <div>
-            <div className='container-styles'>
-              <ImageSlider slides={slides} />
+            <h1>
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                idx={15}
+              />
+            </h1>
+
+            <div>
+              <div className='container-styles'>
+                <ImageSlider slides={slides} />
+              </div>
             </div>
+
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+
           </div>
-
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-
         </div>
-        </div>
-        </>
-     </div>
+      </>
+    </div>
   )
 }
 

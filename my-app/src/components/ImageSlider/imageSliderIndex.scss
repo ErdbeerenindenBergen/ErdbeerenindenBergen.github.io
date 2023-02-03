@@ -8,10 +8,7 @@
   height: 100%;
   margin-top: 10px;
   border-radius: 10px;
-  //below used to fix image display issue but was causing problems with the navigation arrows
-  // padding:15px;
   background-position: center;
-  // background-size:cover;
 }
 
 .left-arrow {
@@ -24,7 +21,7 @@
   z-index: 1;
   cursor: pointer;
   background: rgb(138, 133, 129);
-  //below is a cool property
+  //below is a cool property that crops similar to clip but with rounded borders
   clip-path: inset(7% 0% round 5px);
 }
 
@@ -34,7 +31,7 @@
 
 h4 {
   font-size: 18px;
-  color:rgb(225, 221, 218);
+  color: rgb(225, 221, 218);
   font-family: Arial;
   font-weight: normal;
 }
@@ -49,14 +46,13 @@ h4 {
   z-index: 1;
   cursor: pointer;
   background: rgb(138, 133, 129);
-  //below is a cool property
   clip-path: inset(7% 0% round 5px);
 }
 
 .spacing-for-subtext {
   margin-bottom: 10px;
   margin-top: 10px;
-  background:rgb(60, 54, 49);
+  background: rgb(60, 54, 49);
   padding: 10px 20px;
   border-radius: 10px;
 }
