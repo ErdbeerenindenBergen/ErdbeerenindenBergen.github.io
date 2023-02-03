@@ -63,10 +63,14 @@ h4 {
   .left-arrow {
     left: -13%;
     font-size: 35px;
+    -webkit-clip-path: inset(7% 0% round 5px);
+    clip-path: inset(7% 0% round 5px);
   }
 
   .right-arrow {
     right: -13%;
     font-size: 35px;
+    -webkit-clip-path: inset(7% 0% round 5px);
+    clip-path: inset(7% 0% round 5px);
   }
 }
