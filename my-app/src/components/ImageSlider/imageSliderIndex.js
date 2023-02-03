@@ -2,6 +2,8 @@ import { useState } from 'react'
 import './imageSliderIndex.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-svg-icons'
+import leftArrow from '../../assets/images/leftArrow.png'
+import rightArrow from '../../assets/images/rightArrow.png'
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -23,13 +25,15 @@ const ImageSlider = ({ slides }) => {
       <div className='slider'>
 
         <div className='arrow-space' onClick={goToPrevious}>
-          <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' />
+          {/* <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' /> */}
+          <img src={leftArrow} className='left-arrow' />
         </div>
 
         <img src={slides[currentIndex].url} className="slide"></img>
 
         <div className='arrow-space' onClick={goToNext}>
-          <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' />
+          {/* <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' /> */}
+          <img src={rightArrow} className='right-arrow' />
         </div>
 
       </div>
