@@ -46,11 +46,6 @@ h4 {
   right: -8%;
   z-index: 1;
   cursor: pointer;
-  // font-size: 50px;
-  // color: rgb(60, 54, 49);
-  // background: rgb(138, 133, 129);
-  // -webkit-clip-path: inset(7% 0% round 5px);
-  // clip-path: inset(7% 0% round 5px);
   //newly added with png
   width: 45px;
   height: auto;
@@ -63,20 +58,6 @@ h4 {
   padding: 10px 20px;
   border-radius: 10px;
 }
-
-// @media screen and (max-width: 1200px) {
-//   .left-arrow {
-//     left: -8%;
-//     width: 35px;
-//     height: auto;
-//   }
-
-//   .right-arrow {
-//     right: -8%;
-//     width: 35px;
-//     height: auto;
-//   }
-// }
 
 @media screen and (max-width: 700px) {
   .left-arrow {
@@ -91,9 +72,6 @@ h4 {
 
   .right-arrow {
     right: -12%;
-    // font-size: 35px;
-    // -webkit-clip-path: inset(7% 0% round 5px);
-    // clip-path: inset(7% 0% round 5px);
     //newly added with png
     width: 25px;
     height: auto;
