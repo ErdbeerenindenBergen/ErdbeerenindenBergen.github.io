@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.78656ed5.css",
-    "main.js": "/static/js/main.518714ea.js",
+    "main.css": "/static/css/main.1fbae95a.css",
+    "main.js": "/static/js/main.97e73945.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/tasteBudsMobile.png": "/static/media/tasteBudsMobile.fc241c005c7099a504e5.png",
     "static/media/familyChristmas.png": "/static/media/familyChristmas.02f8b1c279a6cfb2e818.png",
@@ -26,12 +26,12 @@
     "static/media/LaBelleAurore.woff2": "/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.78656ed5.css.map": "/static/css/main.78656ed5.css.map",
-    "main.518714ea.js.map": "/static/js/main.518714ea.js.map",
+    "main.1fbae95a.css.map": "/static/css/main.1fbae95a.css.map",
+    "main.97e73945.js.map": "/static/js/main.97e73945.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78656ed5.css",
-    "static/js/main.518714ea.js"
+    "static/css/main.1fbae95a.css",
+    "static/js/main.97e73945.js"
   ]
 }
