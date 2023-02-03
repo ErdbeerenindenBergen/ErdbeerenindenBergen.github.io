@@ -143,11 +143,6 @@ const Portfolio = () => {
                             idx={15}
                         />
                     </h1>
-
-                    {/* <FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-
-                    <h5>This page is currently under construction.</h5> */}
-
                     <br></br>
 
                     <div className="background-for-portfolio">
@@ -164,8 +159,6 @@ const Portfolio = () => {
                     </div>
 
                     <div className="background-for-portfolio">
-
-                        {/* <h6>More projects coming soon...</h6> */}
 
                         <div className="project-title">
                             <img src={COVIDCareLogo} class="tb-logo"></img>
@@ -193,6 +186,10 @@ const Portfolio = () => {
                         </div> */}
                     </div>
 
+                    <br />
+                    <br />
+                    <br />
+                    <br />
                     <br />
                     <br />
                     <br />

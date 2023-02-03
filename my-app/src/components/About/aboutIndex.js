@@ -2,9 +2,6 @@ import { useEffect, useState, React } from 'react'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './aboutIndex.scss'
 import ImageSlider from '../ImageSlider/imageSliderIndex'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons'
-import familyThanksgiving from '../../assets/images/familyThanksgiving.jpg'
 import familyChristmas from '../../assets/images/familyChristmas.png'
 
 

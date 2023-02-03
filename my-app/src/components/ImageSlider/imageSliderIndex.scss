@@ -22,6 +22,7 @@
   cursor: pointer;
   background: rgb(138, 133, 129);
   //below is a cool property that crops similar to clip but with rounded borders
+  -webkit-clip-path: inset(7% 0% round 5px);
   clip-path: inset(7% 0% round 5px);
 }
 
@@ -46,6 +47,7 @@ h4 {
   z-index: 1;
   cursor: pointer;
   background: rgb(138, 133, 129);
+  -webkit-clip-path: inset(7% 0% round 5px);
   clip-path: inset(7% 0% round 5px);
 }
 
