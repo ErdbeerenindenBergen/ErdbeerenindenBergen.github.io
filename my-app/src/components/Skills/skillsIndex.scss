@@ -21,10 +21,6 @@ h5 {
     background: none;
 }
 
-.centering-on-y-axis {
-
-}
-
 .tagcloud--item {
     color: rgb(255, 255, 255);
     // text-transform: uppercase;
@@ -41,7 +37,6 @@ h5 {
 }
 
 .tagcloud {
-    // display: inline-block;
     margin: auto;
     justify-content: center;
     align-items: center;
@@ -49,7 +44,6 @@ h5 {
     font-weight: 600;
     letter-spacing: 0.0625em;
     font-size: 2em;
-    // radius: min(80vw, 800px); 
 }
 
 .text-sphere-container-mobile {
@@ -67,7 +61,6 @@ h5 {
 }
 
 .button a {
-    //updated color
     color: rgb(244, 244, 236);
     font-family: Helvetica, sans-serif;
     font-weight: bold;

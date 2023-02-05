@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './homeIndex.scss'
 import React from "react"
+import Sparkles from 'react-sparkle';
 
 const Home = () => {
 
@@ -33,12 +34,21 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
+        <Sparkles
+          color="white"
+          count={50}
+          minSize={7}
+          maxSize={10}
+          overflowPx={80}
+          fadeOutSpeed={20}
+          flicker={false}
+        />
         <div className="text-zone home-background">
-          <br/>
-          <br/>
+          <br />
+          <br />
           <h1>
             <img src={Portrait} alt="portrait" className="portrait" />
-            <br/>
+            <br />
             <AnimatedLetters
               letterClass={letterClass}
               strArray={nameArray}
