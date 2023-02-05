@@ -112,6 +112,7 @@ const Skills = () => {
                             <a href={resume} 
                             // uncomment the line below to make resume automatically download
                             // download="KassiBurnettResume" 
+                            rel="noreferrer"
                             target='_blank'>
                                 View My Resume
                             </a>

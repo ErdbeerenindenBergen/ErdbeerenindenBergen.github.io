@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import './imageSliderIndex.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-svg-icons';
 import LeftArrowHomeMade from '../../assets/images/LeftArrowHomeMade.png';
 import RightArrowHomeMade from '../../assets/images/RightArrowHomeMade.png';
 import ReversedLeftArrowHomeMade from '../../assets/images/ReversedLeftArrowHomeMade.png';
