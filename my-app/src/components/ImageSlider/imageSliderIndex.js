@@ -55,7 +55,7 @@ const ImageSlider = ({ slides }) => {
           </div>
         </div>
 
-        <img src={slides[currentIndex].url} alt="" className="slide"></img>
+        <img src={slides[currentIndex].url} alt={slides[currentIndex].altText} className="slide"></img>
 
         <div className='arrow-space' onClick={goToNext} onMouseOver={handleMouseOverRight}
             onMouseOut={handleMouseOutRight} >
