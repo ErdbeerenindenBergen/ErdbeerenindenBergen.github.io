@@ -97,7 +97,7 @@ const Skills = () => {
                             count={50}
                             minSize={7}
                             maxSize={10}
-                            overflowPx={80}
+                            overflowPx={0}
                             fadeOutSpeed={10}
                             flicker={false}
                         />
