@@ -107,7 +107,6 @@
 }
 
 .container.about-page,
-.container.portfolio-page,
 .container.skills-page {
     .text-animate-hover {
     &:hover {
@@ -116,7 +115,8 @@
   }
 }
 
-.container.contact-page {
+.container.contact-page,
+.container.portfolio-page {
   .text-animate-hover {
     &:hover {
       color: rgb(151,63,68);
