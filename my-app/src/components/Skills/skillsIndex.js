@@ -27,6 +27,7 @@ const Skills = () => {
             <div className='container skills-page'>
                 <div className="text-zone">
                     <div className='home-background'>
+                        <div className='centering-on-y-axis'>
                     <h1 className="right-sided">
                         <AnimatedLetters
                             letterClass={letterClass}
@@ -121,15 +122,7 @@ const Skills = () => {
                     <br/>
                     <br/>
                     <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-                    <br/>
-
+                    </div>
                     </div>
                 </div>
             </div>
