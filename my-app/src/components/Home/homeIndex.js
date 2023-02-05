@@ -79,7 +79,7 @@ const Home = () => {
 
           <div>
             <FontAwesomeIcon icon={faHeart} className="icon" />
-            <h9>This page was made from scratch using React.js</h9>
+            <h9>This site was made with care using React.js</h9>
           </div>
 
           {/* <div className="video-container">
