@@ -19,11 +19,13 @@
     color: rgb(149, 149, 149);
     color: rgb(163, 60, 36);
     color: rgb(193, 164, 141);
+    color: rgb(244, 244, 236);
   }
 }
 
-@for $i from 1 through 31 {
+// @for $i from 1 through 31 {
+@for $i from 1 through 50 {
   .text-animate._#{$i} {
-    animation-delay: #{$i / 10}s;
+    animation-delay: #{$i / 13}s;
   }
 }

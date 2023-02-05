@@ -5,24 +5,38 @@
     margin: 0 auto;
 }
 
+.portfolio-background {
+    background: rgb(237, 234, 227);
+    margin: 0 0px 0 15px;
+    border-radius: 35px;
+    padding-top: 20px;
+  }
+
+.container-portfolio-page.home-background{
+    background: rgb(166,153,146);
+}
+
 .project-title {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: auto;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 10px;
-    // background:rgb(60, 54, 49);
-    width: 60%;
+    background:rgb(233, 228, 219);
+    border-radius: 30px;
+    width: 30%;
 }
 
 .background-for-portfolio {
     background: rgb(74, 100, 92);
+    background: rgb(197, 207, 198);
     border-radius: 15px;
     box-shadow: 0 5px 10px 5px rgb(31, 61, 59);
-    width: 70%;
-    // height: 60%;
+    box-shadow: 0 5px 10px 5px rgb(151, 168, 152);
+    width: 80%;
     margin: 0 auto 20px auto;
+    padding-top: 15px;
 }
 
 .tb-logo {
@@ -32,6 +46,7 @@ padding-right: 10px;
 
 h6 {
     color:rgb(225, 221, 218);
+    color: rgb(94,88,79);
     font-size: 26px;
     font-weight: normal;
     font-family: Helvetica;
@@ -48,6 +63,15 @@ h6 {
         width: 100%;
         margin: 0 auto 0px auto;
     }
+
+    .portfolio-background {
+        background: rgb(248, 248, 243);
+        margin: 0 0px 0 0px;
+      }
+
+      .project-title {
+        width: 70%;
+      }
 
 
 }

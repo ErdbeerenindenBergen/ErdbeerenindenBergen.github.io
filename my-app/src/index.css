@@ -7,7 +7,11 @@ body {
   font-family: 300 11px/1. 'Helvetica Neue', 'sans-serif';
   color: #444;
   /* background: rgb(46,69,66); */
+  /* updated color options */
   background: rgb(61,94,85);
+  background: rgb(151,168,152);
+  background: rgb(248, 248, 243);
+  /* background:rgb(166,153,146); */
   overflow: hidden;
   display: block;
   -webkit-font-smoothing: antialiased;

@@ -10,7 +10,7 @@ const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
   const nameArray = ['K', 'a', 's', 's', 'i', ' ', 'B', 'u', 'r', 'n', 'e', 't', 't', ',', ' ', 'P', 'h', 'D']
-  const jobArray = ['W', 'e', 'b', ' ', 'D', 'e', 'v', 'e', 'l', 'o', 'p', 'e', 'r',]
+  const jobArray = ['F', 'u', 'l', 'l', '-', 'S', 't', 'a', 'c', 'k', ' ', 'S', 'o', 'f', 't', 'w', 'a', 'r', 'e', ' ', 'E', 'n', 'g', 'i', 'n', 'e', 'e', 'r']
 
   useEffect(() => {
     let timeout;
@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <div className="text-zone">
+        <div className="text-zone home-background">
           <br/>
           <br/>
           <h1>
@@ -51,7 +51,7 @@ const Home = () => {
               idx={19}
             />
           </h1>
-          <h2>Fullstack Software Engineer</h2>
+          {/* <h2>Fullstack Software Engineer</h2> */}
           <h3>Award-winning Scholar and Writer</h3>
           <div className="button-space">
             <button onClick={routeChange} className="flat-button">

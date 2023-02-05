@@ -8,7 +8,10 @@
   }
 
   h1 {
-    color: #fff;
+    //updated colors below
+    color: rgb(244, 244, 236);
+    color:rgb(151,168,152);
+    color: rgb(130, 125, 118);    
     font-size: min(max(30px, 7vw), 65px);
     margin: 0;
     font-family: 'Coolvetica';
@@ -26,18 +29,26 @@
     }
   }
 
-  h2 {
-    color: #b3b3b3;
-    margin-top: 20px;
-    font-weight: 400;
-    font-size: min(max(23px, 3vw), 45px);
-    font-family: sans-serif;
-    letter-spacing: 3px;
-    animation: fadeIn 1s 1.8s backwards;
-  }
+  // h2 {
+  //   //updated color
+  //   color: rgb(233, 228, 219);
+  //   color: rgb(166, 153, 146);
+  //   color: rgb(130, 125, 118);  
+  //   color:rgb(151,168,152);  
+  //   margin-top: 20px;
+  //   font-weight: 400;
+  //   font-size: min(max(23px, 3vw), 45px);
+  //   font-family: sans-serif;
+  //   letter-spacing: 3px;
+  //   animation: fadeIn 1s 1.8s backwards;
+  // }
 
   h3 {
-    color: #b3b3b3;
+    //updated color
+    color: rgb(233, 228, 219);
+    color: rgb(166, 153, 146);
+    color: rgb(130, 125, 118);
+    color:rgb(151,168,152);
     margin-top: 20px;
     font-weight: 400;
     font-size: min(max(23px, 3vw), 45px);
@@ -51,27 +62,39 @@
     justify-content: center;
   }
 
+  .home-background {
+    background: rgb(197, 207, 198);
+    margin: 3% 40px 0 160px;
+    border-radius: 35px;
+    padding-top: 20px;
+  }
+
   button {
+    //updated colors on bottom
     color: rgb(61,94,85);
+    color: rgb(137, 157, 139);
     background-color: rgb(255, 234, 206);
+    background-color: rgb(233, 228, 219);
     font-size: min(max(15px, 4vw), 35px);
     font-weight: 400;
     letter-spacing: 4px;
     font-family: sans-serif;
     text-decoration: none;
     padding: 10px 18px;
-    border: 1.5px solid white;
+    //two border options for button below
+    border: 2px solid rgb(244, 244, 236);
+    border: none;
     border-radius: 10px;
     margin-top: 10px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
     margin-bottom: 100px;
+    cursor:pointer;
 
     &:hover {
-      background: rgb(236, 147, 127);
-      background:rgb(193, 164, 141);
-      color: white;
+      background:rgb(151,63,68);
+      color: rgb(244, 244, 236);
       transition: 0.4s ease-in-out;
     }
   }
@@ -83,4 +106,9 @@
       top: 50%;
     }
   }
+
+  .home-background {
+    margin: 0 40px;
+  }
+
 }

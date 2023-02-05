@@ -59,25 +59,28 @@ const About = () => {
         <div className="container about-page">
           <div className="text-zone">
 
-            <h1>
-              <AnimatedLetters
-                letterClass={letterClass}
-                strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
-                idx={15}
-              />
-            </h1>
+            <div className='home-background'>
 
-            <div>
-              <div className='container-styles'>
-                <ImageSlider slides={slides} />
+              <h1>
+                <AnimatedLetters
+                  letterClass={letterClass}
+                  strArray={['A', 'b', 'o', 'u', 't', ' ', 'm', 'e']}
+                  idx={15}
+                />
+              </h1>
+
+              <div>
+                <div className='container-styles'>
+                  <ImageSlider slides={slides} />
+                </div>
               </div>
-            </div>
 
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
+              <br />
+              <br />
+              <br />
+              <br />
+              <br />
+            </div>
 
           </div>
         </div>

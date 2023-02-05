@@ -2,7 +2,7 @@ import { Link, NavLink } from 'react-router-dom'
 import './sidebarIndex.scss'
 import { useState } from 'react'
 import LogoKB from '../../assets/images/LogoKB.png'
-import LogoSubtitleCream from '../../assets/images/LogoSubtitleCream.png'
+import LogoSubtitle from '../../assets/images/LogoSubtitle.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope, faBook, faTelevision, faBars, faPenFancy } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
@@ -16,7 +16,7 @@ return (
     // class="left-corner" 
     to="/">
         <img src={LogoKB} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitleCream} alt="Kassi Burnett, PhD" />
+        <img className="sub-logo" src={LogoSubtitle} alt="Kassi Burnett, PhD" />
     </Link>
 
     <nav className={showNav ? 'mobile-show' : ''}>

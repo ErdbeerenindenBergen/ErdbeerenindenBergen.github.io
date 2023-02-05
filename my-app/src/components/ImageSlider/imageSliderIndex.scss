@@ -18,12 +18,6 @@
   left: -8%;
   z-index: 1;
   cursor: pointer;
-  // font-size: 50px;
-  // color: rgb(60, 54, 49);
-  //below is a cool property that crops similar to clip but with rounded borders
-  // -webkit-clip-path: inset(7% 0% round 5px);
-  // clip-path: inset(7% 0% round 5px);
-  //newly added with png
   width: 45px;
   height: auto;
 }
@@ -35,6 +29,7 @@
 h4 {
   font-size: 18px;
   color: rgb(225, 221, 218);
+  color: rgb(94, 88, 79);
   font-family: Arial;
   font-weight: normal;
 }
@@ -46,15 +41,14 @@ h4 {
   right: -8%;
   z-index: 1;
   cursor: pointer;
-  //newly added with png
   width: 45px;
   height: auto;
 }
 
 .spacing-for-subtext {
-  margin-bottom: 10px;
+  margin-bottom: 0px;
   margin-top: 10px;
-  background: rgb(60, 54, 49);
+  background: rgb(233, 228, 219);
   padding: 10px 20px;
   border-radius: 10px;
 }
@@ -62,18 +56,13 @@ h4 {
 @media screen and (max-width: 700px) {
   .left-arrow {
     left: -12%;
-    // font-size: 35px;
-    // -webkit-clip-path: inset(7% 0% round 5px);
-    // clip-path: inset(7% 0% round 5px);
-    //newly added with png
-    width: 25px;
+    width: 35px;
     height: auto;
   }
 
   .right-arrow {
     right: -12%;
-    //newly added with png
-    width: 25px;
+    width: 35px;
     height: auto;
   }
 }

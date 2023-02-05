@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import './imageSliderIndex.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-svg-icons'
-import leftArrow from '../../assets/images/leftArrow.png'
-import rightArrow from '../../assets/images/rightArrow.png'
+import { faSquareCaretLeft, faSquareCaretRight } from '@fortawesome/free-solid-svg-icons';
+import LeftArrowHomeMade from '../../assets/images/LeftArrowHomeMade.png';
+import RightArrowHomeMade from '../../assets/images/RightArrowHomeMade.png';
+import ReversedLeftArrowHomeMade from '../../assets/images/ReversedLeftArrowHomeMade.png';
+import ReversedRightArrowHomeMade from '../../assets/images/ReversedRightArrowHomeMade.png';
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -20,20 +22,51 @@ const ImageSlider = ({ slides }) => {
     setCurrentIndex(newIndex);
   }
 
+  const [isHoveringLeft, setIsHoveringLeft] = useState(false);
+
+  const handleMouseOverLeft = () => {
+    setIsHoveringLeft(true);
+  };
+
+  const handleMouseOutLeft = () => {
+    setIsHoveringLeft(false);
+  };
+
+  const [isHoveringRight, setIsHoveringRight] = useState(false);
+
+  const handleMouseOverRight = () => {
+    setIsHoveringRight(true);
+  };
+
+  const handleMouseOutRight = () => {
+    setIsHoveringRight(false);
+  };
+
   return (
     <>
       <div className='slider'>
 
         <div className='arrow-space' onClick={goToPrevious}>
           {/* <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' /> */}
-          <img src={leftArrow} className='left-arrow' />
+          <div onMouseOver={handleMouseOverLeft}
+              onMouseOut={handleMouseOutLeft} >
+            <img src={LeftArrowHomeMade} className='left-arrow' 
+              />
+            {isHoveringLeft && ( <img src={ReversedLeftArrowHomeMade} 
+            className='left-arrow'/>
+            )}
+          </div>
         </div>
 
         <img src={slides[currentIndex].url} className="slide"></img>
 
-        <div className='arrow-space' onClick={goToNext}>
+        <div className='arrow-space' onClick={goToNext} onMouseOver={handleMouseOverRight}
+            onMouseOut={handleMouseOutRight} >
           {/* <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' /> */}
-          <img src={rightArrow} className='right-arrow' />
+          <img src={RightArrowHomeMade} className='right-arrow' />
+          {isHoveringRight && ( <img src={ReversedRightArrowHomeMade} 
+          className='right-arrow' />
+          )}
         </div>
 
       </div>

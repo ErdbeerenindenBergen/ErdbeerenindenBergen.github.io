@@ -3,7 +3,7 @@
   height: 100%;
   position: absolute;
   overflow: auto;
-  padding-top: 3%;
+  padding-top: 0%;
 }
 
 /* width */
@@ -13,19 +13,22 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: white;
+  //updated color
+  background: rgb(244, 244, 236);
   border: none;
   border-radius: 5px;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: lightgray;
+  //updated color
+  background: rgb(195, 186, 169);
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: grey;
+  //updated color
+  background: rgb(166, 153, 146);
 }
 
 .container {
@@ -54,6 +57,7 @@
     //color of all header text by default
     color: rgb(236, 147, 127);
     color: rgb(193, 164, 141);
+    color: rgb(130, 125, 118);    
     font-weight: 400;
     margin-top: 0;
     position: relative;
@@ -63,7 +67,7 @@
 
   p {
     font-size: 18px;
-    color: #fff;
+    color: rgb(94, 88, 79);
     font-family: sans-serif;
     font-weight: 300;
     max-width: fit-content;
@@ -99,9 +103,23 @@
     max-height: 90%;
   }
 
-  .text-animate-hover {
+
+}
+
+.container.about-page,
+.container.portfolio-page,
+.container.skills-page {
+    .text-animate-hover {
     &:hover {
       color: #fff;
+    }
+  }
+}
+
+.container.contact-page {
+  .text-animate-hover {
+    &:hover {
+      color: rgb(151,63,68);
     }
   }
 }

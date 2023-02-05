@@ -37,10 +37,13 @@
     input[type='email'] {
         width: 100%;
         border: 0;
+        //updated colors below
         background: rgb(79, 121, 110);
+        background:rgb(233,228,219);
         height: 50px;
         font-size: 16px;
         color: #fff;
+        color: rgb(94,88,79);        
         padding: 0 20px;
         box-sizing: border-box;
     }
@@ -48,18 +51,21 @@
     input::placeholder,
     textarea::placeholder {
         opacity: 0.8;
+                //updated colors below
         color: lightgray;
+        color:rgb(158, 154, 147);
     }
 
     input:focus,
     textarea:focus {
         outline-color: white;
+        outline-width: 10px;
     }
 
     textarea {
         width: 100%;
         border: 0;
-        background: rgb(79, 121, 110);
+        background:rgb(233,228,219);
         height: 50px;
         font-size: 16px;
         color: #fff;
@@ -69,16 +75,16 @@
     }
 
     .flat-button {
-        color: rgb(61,94,85);
+        color:rgb(94, 88, 79);
         font-weight: bold;
         font-size: 15px;
         letter-spacing: 3px;
         text-decoration: none;
         padding: 8px 10px;
         border: none;
-        border: 1.5px solid white;
+        border: 1.5px solid rgb(244,244,236);
         border-radius: 4px;
-        background-color: rgb(255, 234, 206);
+        background-color: rgb(200, 213, 201);
         text-transform: uppercase;
         float: right;
         text-align: center;
@@ -89,11 +95,12 @@
 .flat-button:hover {
     background-color: rgb(236, 147, 127);
     background-color: rgb(193, 164, 141);
-    color: white;
+    background-color: rgb(151, 63, 68);
+    color: rgb(244,244,236);
 }
 
 .map-wrap {
-    background: rgba(8, 253, 216, 0.1);
+    background: rgb(151,168,152, 0.5);
     float: right;
     width: 45%;
     height: 115%;
@@ -111,7 +118,7 @@
 
 h3 {
     font-size: 18px;
-    color: #fff;
+    color: rgb(94, 88, 79);
     font-family: sans-serif;
     font-weight: 300;
     margin-top: 100px;
@@ -132,16 +139,19 @@ h3 {
 
 .info-map {
     position: absolute;
-    background: rgb(60, 54, 49);
+    background: rgb(151, 63, 68);
+    background: rgb(166,153,146);
+    background: rgb(94,88,79);
+    background: rgb(58,84,110);
     top: 50px;
     right: 15px;
     z-index: 999999;
     width: 267px;
     padding: 20px;
-    color: #fff;
+    color: rgb(244,244,236);
     font-family: 'Helvetica';
     font-size: 17px;
-    font-weight: 300;
+    font-weight: 700;
     opacity: 0;
     animation: fadeIn 1s 1.5s;
     animation-fill-mode: forwards;
@@ -153,6 +163,10 @@ h3 {
         color: rgb(236, 147, 127);
         }
     }
+}
+
+h8{
+    color:rgb(244,244,236);
 }
 
 

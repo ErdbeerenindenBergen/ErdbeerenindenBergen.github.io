@@ -136,45 +136,47 @@ const Portfolio = () => {
         <>
             <div className='container portfolio-page'>
                 <div className="text-zone">
-                    <h1>
-                        <AnimatedLetters
-                            letterClass={letterClass}
-                            strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
-                            idx={15}
-                        />
-                    </h1>
-                    <br></br>
+                    <div className="portfolio-background">
+                        <h1>
+                            <AnimatedLetters
+                                letterClass={letterClass}
+                                strArray={['P', 'o', 'r', 't', 'f', 'o', 'l', 'i', 'o']}
+                                idx={15}
+                            />
+                        </h1>
+                        <br></br>
 
-                    <div className="background-for-portfolio">
-                        <div className="project-title">
-                            <img src={tbLogo} class="tb-logo"></img>
-                            <h6>taste buds</h6>
-                        </div>
+                        <div className="background-for-portfolio">
+                            <div className="project-title">
+                                <img src={tbLogo} class="tb-logo"></img>
+                                <h6>taste buds</h6>
+                            </div>
 
-                        <div>
-                            <div className='container-styles-portfolio'>
-                                <ImageSlider slides={slides} />
+                            <div>
+                                <div className='container-styles-portfolio'>
+                                    <ImageSlider slides={slides} />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="background-for-portfolio">
+                        <div className="background-for-portfolio">
 
-                        <div className="project-title">
-                            <img src={COVIDCareLogo} class="tb-logo"></img>
-                            <h6>COVID Care</h6>
-                        </div>
+                            <div className="project-title">
+                                <img src={COVIDCareLogo} class="tb-logo"></img>
+                                <h6>COVID Care</h6>
+                            </div>
 
-                        <div>
-                            <div className='container-styles-portfolio'>
-                                <ImageSlider slides={slidesCC} />
+                            <div>
+                                <div className='container-styles-portfolio'>
+                                    <ImageSlider slides={slidesCC} />
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div className="background-for-portfolio">
-                        <h6>More project overviews coming soon...</h6>
-                        {/* <div className="project-title">
+                        <div className="background-for-portfolio">
+                            <h6>More project overviews coming soon...</h6>
+                            <br />
+                            {/* <div className="project-title">
                             <img src={tbLogo} class="tb-logo"></img>
                             <h6>taste buds</h6>
                         </div>
@@ -184,15 +186,16 @@ const Portfolio = () => {
                                 <ImageSlider slides={slides} />
                             </div>
                         </div> */}
-                    </div>
+                        </div>
 
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
-                    <br />
+
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+
+                    </div>
 
                 </div>
             </div>

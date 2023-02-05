@@ -26,6 +26,7 @@ const Skills = () => {
         <>
             <div className='container skills-page'>
                 <div className="text-zone">
+                    <div className='home-background'>
                     <h1 className="right-sided">
                         <AnimatedLetters
                             letterClass={letterClass}
@@ -129,6 +130,7 @@ const Skills = () => {
                     <br/>
                     <br/>
 
+                    </div>
                 </div>
             </div>
         </>

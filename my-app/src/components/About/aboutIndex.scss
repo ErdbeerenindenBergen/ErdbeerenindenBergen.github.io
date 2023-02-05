@@ -1,17 +1,27 @@
 .container-styles {
     min-width: 250px;
     border-radius: 10%;
-    width: 40%;
-    width: 50%;
+    width: 70%;
     height: auto;
     object-fit: cover;
     margin: 0 auto;
+}
+
+.home-background {
+    background: rgb(197, 207, 198);
+    margin: 0 0 0 20px;
+    border-radius: 35px;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 1200px) {
     .container-styles {
         margin: 0 auto;
         width: 90%;
+    }
+
+    .home-background {
+        margin: 0 0 0 0px;
     }
 
     p {
