@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef9de2b8.css",
-    "main.js": "/static/js/main.2e23e607.js",
+    "main.css": "/static/css/main.7f25aca9.css",
+    "main.js": "/static/js/main.0c3b22f2.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
+    "static/media/playingOutside.JPG": "/static/media/playingOutside.0db75aeb9cc2c300aff7.JPG",
     "static/media/tasteBudsMobile.png": "/static/media/tasteBudsMobile.fc241c005c7099a504e5.png",
     "static/media/FamilyBirthday.png": "/static/media/FamilyBirthday.67069bee57aa900962a9.png",
+    "static/media/ReadingAndWriting.png": "/static/media/ReadingAndWriting.a5ec3d44b64c3d49ad1c.png",
     "static/media/tasteBuds10.png": "/static/media/tasteBuds10.ed848fc28b47537ecb82.png",
     "static/media/Portrait.JPG": "/static/media/Portrait.46a933fc836020eea4b5.JPG",
     "static/media/tasteBuds11.png": "/static/media/tasteBuds11.fe7c46174a0500b45b9d.png",
@@ -13,6 +15,7 @@
     "static/media/tasteBuds7.png": "/static/media/tasteBuds7.c61aa54928075ed21897.png",
     "static/media/tasteBuds4.png": "/static/media/tasteBuds4.24084b1c366a66157adf.png",
     "static/media/COVIDCare2.png": "/static/media/COVIDCare2.746276fe0c33db34cf89.png",
+    "static/media/KassiPresenting.jpeg": "/static/media/KassiPresenting.aeccbc38baf2ed9401bb.jpeg",
     "static/media/COVIDCare3.png": "/static/media/COVIDCare3.57c7dd55ab6ab3eafaf1.png",
     "static/media/tasteBuds6.png": "/static/media/tasteBuds6.d9f557499c0f2fbaddf2.png",
     "static/media/tasteBuds5.png": "/static/media/tasteBuds5.9b191782ce573503bbd2.png",
@@ -30,12 +33,12 @@
     "static/media/LogoSubtitle.png": "/static/media/LogoSubtitle.f222d91a872fb4853858.png",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.ef9de2b8.css.map": "/static/css/main.ef9de2b8.css.map",
-    "main.2e23e607.js.map": "/static/js/main.2e23e607.js.map",
+    "main.7f25aca9.css.map": "/static/css/main.7f25aca9.css.map",
+    "main.0c3b22f2.js.map": "/static/js/main.0c3b22f2.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef9de2b8.css",
-    "static/js/main.2e23e607.js"
+    "static/css/main.7f25aca9.css",
+    "static/js/main.0c3b22f2.js"
   ]
 }
