@@ -55,7 +55,7 @@ const ImageSlider = ({ slides }) => {
           </div>
         </div>
 
-        <img src={slides[currentIndex].url} alt={slides[currentIndex].altText} className="slide"></img>
+        <img src={slides[currentIndex].url} alt={slides[currentIndex].altText} className={slides[currentIndex].slideStyleType}></img>
 
         <div className='arrow-space' onClick={goToNext} onMouseOver={handleMouseOverRight}
             onMouseOut={handleMouseOutRight} >
@@ -70,10 +70,10 @@ const ImageSlider = ({ slides }) => {
       <div className="spacing-for-subtext">
         <h4>{slides[currentIndex].text}</h4>
       </div>
-      <br />
-      <br />
-      <br />
-      <br />
+      <br/>
+      <br/>
+      <br/>
+      <br/>
     </>
   )
 };
