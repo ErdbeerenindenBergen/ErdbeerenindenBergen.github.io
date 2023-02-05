@@ -10,8 +10,8 @@
   h1 {
     //updated colors below
     color: rgb(244, 244, 236);
-    color:rgb(151,168,152);
-    color: rgb(130, 125, 118);    
+    color: rgb(151, 168, 152);
+    color: rgb(130, 125, 118);
     font-size: min(max(22px, 6vw), 65px);
     margin: 0;
     font-family: 'Coolvetica';
@@ -29,26 +29,12 @@
     }
   }
 
-  // h2 {
-  //   //updated color
-  //   color: rgb(233, 228, 219);
-  //   color: rgb(166, 153, 146);
-  //   color: rgb(130, 125, 118);  
-  //   color:rgb(151,168,152);  
-  //   margin-top: 20px;
-  //   font-weight: 400;
-  //   font-size: min(max(23px, 3vw), 45px);
-  //   font-family: sans-serif;
-  //   letter-spacing: 3px;
-  //   animation: fadeIn 1s 1.8s backwards;
-  // }
 
   h3 {
-    //updated color
     color: rgb(233, 228, 219);
     color: rgb(166, 153, 146);
     color: rgb(130, 125, 118);
-    color:rgb(151,168,152);
+    color: rgb(151, 168, 152);
     margin-top: 20px;
     font-weight: 400;
     font-size: min(max(20px, 3vw), 45px);
@@ -56,6 +42,48 @@
     letter-spacing: 3px;
     animation: fadeIn 1s 2.8s backwards;
   }
+
+  .made-with-love {
+    display: flex;
+    padding-top: 30px;
+    margin-left: 150px;
+    justify-content: center;
+  }
+
+  .icon {
+    font-size: 40px;
+    color: rgb(233, 228, 219);
+    color: rgb(151, 63, 68);
+    padding-right: 15px;
+    animation: pulse 0.75s infinite;
+    :pulse {
+      font-size: 105px;
+    }
+  }
+
+  h9 {
+    font-family: cursive;
+    font-size: 24px;
+    color: rgb(130, 125, 118);
+    font-weight: normal;
+  }
+
+  // .video-container {
+  //   border-radius: 10px;
+  //   // padding: 20px 0 20px 0;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   text-align: center;
+  // }
+
+  // .video-box {
+  //   border-radius: 15px;
+  //   margin-left: 20px;
+  //   transform: translateY(-20px);
+  //   // justify-content: center;
+  //   // align-items: center;
+  // }
 
   .button-space {
     display: flex;
@@ -71,7 +99,7 @@
 
   button {
     //updated colors on bottom
-    color: rgb(61,94,85);
+    color: rgb(61, 94, 85);
     color: rgb(137, 157, 139);
     background-color: rgb(255, 234, 206);
     background-color: rgb(233, 228, 219);
@@ -89,11 +117,11 @@
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
-    margin-bottom: 100px;
-    cursor:pointer;
+    margin-bottom: 60px;
+    cursor: pointer;
 
     &:hover {
-      background:rgb(151,63,68);
+      background: rgb(151, 63, 68);
       color: rgb(244, 244, 236);
       transition: 0.4s ease-in-out;
     }
@@ -105,10 +133,41 @@
     .text-zone {
       top: 50%;
     }
+
+    h9 {
+      font-size: 18px;
+    }
+
+    .icon {
+      font-size: 25px;
+    }
+
+    .made-with-love {
+    margin: auto;
+    }
+
+    // .video-box {
+    //   --webkit-transform: unset;
+    //   transform: unset;
+    // }
   }
 
   .home-background {
     margin: 0 40px;
   }
 
+}
+
+@media screen and (max-width: 500px){
+  .home-page {
+  h9 {
+    font-size: 14px;
+  }
+
+  .made-with-love {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 }

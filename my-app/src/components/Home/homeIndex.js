@@ -5,6 +5,9 @@ import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex'
 import './homeIndex.scss'
 import React from "react"
 import Sparkles from 'react-sparkle';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faHeart } from '@fortawesome/free-solid-svg-icons'
+// import video from '../../assets/images/Signature.mp4'
 
 const Home = () => {
 
@@ -44,6 +47,7 @@ const Home = () => {
           flicker={false}
         />
         <div className="text-zone home-background">
+          <div></div>
           <br />
           <br />
           <h1>
@@ -68,6 +72,23 @@ const Home = () => {
               CONTACT ME
             </button>
           </div>
+
+        </div>
+
+        <div className="made-with-love">
+
+          <div>
+            <FontAwesomeIcon icon={faHeart} className="icon" />
+            <h9>This page was made from scratch using React.js</h9>
+          </div>
+
+          {/* <div className="video-container">
+            <video src={video} type="video/mp4" width="auto" height="60" className="video-box" autoPlay muted> */}
+              {/* <source src={video} type="video/mp4" /> */}
+              {/* Kassi S. Burnett */}
+            {/* </video>
+          </div> */}
+
         </div>
 
       </div>
