@@ -1,8 +1,6 @@
 import AnimatedLetters from '../AnimatedLetters/animatedLettersIndex';
 import './skillsIndex.scss';
 import React, { useEffect, useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faScrewdriverWrench } from '@fortawesome/free-solid-svg-icons';
 import { TagCloud } from "@frank-mayer/react-tag-cloud";
 import Sparkles from 'react-sparkle';
 import resume from '../../assets/images/resume.pdf';
@@ -35,9 +33,6 @@ const Skills = () => {
                             idx={15}
                         />
                     </h1>
-
-                    {/*<FontAwesomeIcon icon={faScrewdriverWrench} className="construction-icon" />
-                    <h5>This page is currently under construction.</h5> */}
 
                     <div className="skills">
 

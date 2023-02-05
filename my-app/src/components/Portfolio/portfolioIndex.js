@@ -148,7 +148,7 @@ const Portfolio = () => {
 
                         <div className="background-for-portfolio">
                             <div className="project-title">
-                                <img src={tbLogo} class="tb-logo"></img>
+                                <img src={tbLogo} alt="logo for taste buds app" class="tb-logo"></img>
                                 <h6>taste buds</h6>
                             </div>
 
@@ -162,7 +162,7 @@ const Portfolio = () => {
                         <div className="background-for-portfolio">
 
                             <div className="project-title">
-                                <img src={COVIDCareLogo} class="tb-logo"></img>
+                                <img src={COVIDCareLogo} alt="logo for covid care app" class="tb-logo"></img>
                                 <h6>COVID Care</h6>
                             </div>
 

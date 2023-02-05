@@ -45,24 +45,22 @@ const ImageSlider = ({ slides }) => {
       <div className='slider'>
 
         <div className='arrow-space' onClick={goToPrevious}>
-          {/* <FontAwesomeIcon icon={faSquareCaretLeft} className='left-arrow' /> */}
           <div onMouseOver={handleMouseOverLeft}
               onMouseOut={handleMouseOutLeft} >
-            <img src={LeftArrowHomeMade} className='left-arrow' 
+            <img src={LeftArrowHomeMade} alt="clickable left arrow" className='left-arrow' 
               />
-            {isHoveringLeft && ( <img src={ReversedLeftArrowHomeMade} 
-            className='left-arrow'/>
+            {isHoveringLeft && ( <img src={ReversedLeftArrowHomeMade} alt="left arrow that has been clicked or hovered over"
+            className='left-arrow' />
             )}
           </div>
         </div>
 
-        <img src={slides[currentIndex].url} className="slide"></img>
+        <img src={slides[currentIndex].url} alt="" className="slide"></img>
 
         <div className='arrow-space' onClick={goToNext} onMouseOver={handleMouseOverRight}
             onMouseOut={handleMouseOutRight} >
-          {/* <FontAwesomeIcon icon={faSquareCaretRight} className='right-arrow' /> */}
-          <img src={RightArrowHomeMade} className='right-arrow' />
-          {isHoveringRight && ( <img src={ReversedRightArrowHomeMade} 
+          <img src={RightArrowHomeMade} alt="clickable right arrow"  className='right-arrow' />
+          {isHoveringRight && ( <img src={ReversedRightArrowHomeMade} alt="right arrow that has been clicked or hovered over"
           className='right-arrow' />
           )}
         </div>
