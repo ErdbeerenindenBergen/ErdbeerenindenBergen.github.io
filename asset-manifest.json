@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a06209a.css",
+    "main.css": "/static/css/main.ef9de2b8.css",
     "main.js": "/static/js/main.2e23e607.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/tasteBudsMobile.png": "/static/media/tasteBudsMobile.fc241c005c7099a504e5.png",
@@ -30,12 +30,12 @@
     "static/media/LogoSubtitle.png": "/static/media/LogoSubtitle.f222d91a872fb4853858.png",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.4a06209a.css.map": "/static/css/main.4a06209a.css.map",
+    "main.ef9de2b8.css.map": "/static/css/main.ef9de2b8.css.map",
     "main.2e23e607.js.map": "/static/js/main.2e23e607.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a06209a.css",
+    "static/css/main.ef9de2b8.css",
     "static/js/main.2e23e607.js"
   ]
 }
