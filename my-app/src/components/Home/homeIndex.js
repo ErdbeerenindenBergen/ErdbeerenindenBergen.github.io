@@ -39,7 +39,7 @@ const Home = () => {
           count={50}
           minSize={7}
           maxSize={10}
-          overflowPx={80}
+          overflowPx={0}
           fadeOutSpeed={20}
           flicker={false}
         />
