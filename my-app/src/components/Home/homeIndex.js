@@ -37,16 +37,32 @@ const Home = () => {
   return (
     <>
       <div className="container home-page">
-        <Sparkles
-          color="white"
-          count={50}
-          minSize={7}
-          maxSize={10}
-          overflowPx={0}
-          fadeOutSpeed={20}
-          flicker={false}
-          className="sparkles"
-        />
+        {window.innerWidth > 700 ? (
+          <Sparkles
+            color="white"
+            count={50}
+            minSize={7}
+            maxSize={10}
+            overflowPx={0}
+            fadeOutSpeed={20}
+            flicker={false}
+            className="sparkles"
+          />
+        ) : (
+          <Sparkles
+            color="white"
+            count={0}
+            minSize={3}
+            maxSize={6}
+            overflowPx={0}
+            fadeOutSpeed={10}
+            flicker={false}
+            className="sparkles"
+          />
+        )
+
+        }
+
         <div className="text-zone home-background">
           <div></div>
           <br />
@@ -85,9 +101,9 @@ const Home = () => {
 
           {/* <div className="video-container">
             <video src={video} type="video/mp4" width="auto" height="60" className="video-box" autoPlay muted> */}
-              {/* <source src={video} type="video/mp4" /> */}
-              {/* Kassi S. Burnett */}
-            {/* </video>
+          {/* <source src={video} type="video/mp4" /> */}
+          {/* Kassi S. Burnett */}
+          {/* </video>
           </div> */}
 
         </div>
