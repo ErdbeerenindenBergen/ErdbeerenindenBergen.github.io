@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3779a68d.css",
-    "main.js": "/static/js/main.307433c9.js",
+    "main.js": "/static/js/main.13b727a0.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/playingOutside.JPG": "/static/media/playingOutside.0db75aeb9cc2c300aff7.JPG",
     "static/media/tasteBudsMobile.png": "/static/media/tasteBudsMobile.fc241c005c7099a504e5.png",
@@ -34,11 +34,11 @@
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
     "main.3779a68d.css.map": "/static/css/main.3779a68d.css.map",
-    "main.307433c9.js.map": "/static/js/main.307433c9.js.map",
+    "main.13b727a0.js.map": "/static/js/main.13b727a0.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3779a68d.css",
-    "static/js/main.307433c9.js"
+    "static/js/main.13b727a0.js"
   ]
 }
