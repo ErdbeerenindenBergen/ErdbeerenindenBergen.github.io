@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c4791d7.css",
-    "main.js": "/static/js/main.1958d852.js",
+    "main.css": "/static/css/main.8aa41028.css",
+    "main.js": "/static/js/main.65779a5e.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
     "static/media/playingOutside.JPG": "/static/media/playingOutside.0db75aeb9cc2c300aff7.JPG",
     "static/media/tasteBudsMobile.png": "/static/media/tasteBudsMobile.fc241c005c7099a504e5.png",
@@ -33,12 +33,12 @@
     "static/media/LogoSubtitle.png": "/static/media/LogoSubtitle.f222d91a872fb4853858.png",
     "static/media/CoolveticaRg-Regular.woff2": "/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
     "index.html": "/index.html",
-    "main.9c4791d7.css.map": "/static/css/main.9c4791d7.css.map",
-    "main.1958d852.js.map": "/static/js/main.1958d852.js.map",
+    "main.8aa41028.css.map": "/static/css/main.8aa41028.css.map",
+    "main.65779a5e.js.map": "/static/js/main.65779a5e.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c4791d7.css",
-    "static/js/main.1958d852.js"
+    "static/css/main.8aa41028.css",
+    "static/js/main.65779a5e.js"
   ]
 }
