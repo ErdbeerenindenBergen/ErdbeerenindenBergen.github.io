@@ -126,7 +126,7 @@
 
 @media screen and (max-width: 1200px) {
   .page {
-    position: absolute;
+    height: calc(100% - 100px);
   }
 
   .container.home-page,
@@ -179,10 +179,10 @@
     }
   }
 
-  .stage-cube-cont {
-    display: flex;
-    position: initial;
-    width: 100%;
-    height: 0%;
-  }
+  // .stage-cube-cont {
+  //   display: flex;
+  //   position: initial;
+  //   width: 100%;
+  //   height: 0%;
+  // }
 }

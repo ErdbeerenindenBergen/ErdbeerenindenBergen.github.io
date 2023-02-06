@@ -35,81 +35,73 @@ const Home = () => {
   }
 
   return (
-    <>
-      <div className="container home-page">
-        {window.innerWidth > 700 ? (
-          <Sparkles
-            color="white"
-            count={50}
-            minSize={7}
-            maxSize={10}
-            overflowPx={0}
-            fadeOutSpeed={20}
-            flicker={false}
-            className="sparkles"
-          />
-        ) : (
-          <Sparkles
-            color="white"
-            count={0}
-            minSize={3}
-            maxSize={6}
-            overflowPx={0}
-            fadeOutSpeed={10}
-            flicker={false}
-            className="sparkles"
-          />
-        )
-
-        }
-
-        <div className="text-zone home-background">
-          <div></div>
-          <br />
-          <br />
-          <h1>
-            <img src={Portrait} alt="portrait" className="portrait" />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={1}
+    <div className='scroll-yes'>
+      <>
+        <div className="container home-page">
+          {window.innerWidth > 700 ? (
+            <Sparkles
+              color="white"
+              count={50}
+              minSize={7}
+              maxSize={10}
+              overflowPx={0}
+              fadeOutSpeed={20}
+              flicker={false}
+              className="sparkles"
             />
-            <br />
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={jobArray}
-              idx={19}
+          ) : (
+            <Sparkles
+              color="white"
+              count={0}
+              minSize={3}
+              maxSize={6}
+              overflowPx={0}
+              fadeOutSpeed={10}
+              flicker={false}
+              className="sparkles"
             />
-          </h1>
-          {/* <h2>Fullstack Software Engineer</h2> */}
-          <h3>Award-winning Scholar and Writer</h3>
-          <div className="button-space">
-            <button onClick={routeChange} className="flat-button">
-              CONTACT ME
-            </button>
+          )
+          }
+
+          <div className="text-zone home-background">
+            <div></div>
+            <br />
+            <br />
+            <h1>
+              <img src={Portrait} alt="portrait" className="portrait" />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={nameArray}
+                idx={1}
+              />
+              <br />
+              <AnimatedLetters
+                letterClass={letterClass}
+                strArray={jobArray}
+                idx={19}
+              />
+            </h1>
+
+            <h3>Award-winning Scholar and Writer</h3>
+            <div className="button-space">
+              <button onClick={routeChange} className="flat-button">
+                CONTACT ME
+              </button>
+            </div>
+
+          </div>
+
+          <div className="made-with-love">
+            <div>
+              <FontAwesomeIcon icon={faHeart} className="icon" />
+              <h9>This site was made with care using React.js</h9>
+            </div>
           </div>
 
         </div>
-
-        <div className="made-with-love">
-
-          <div>
-            <FontAwesomeIcon icon={faHeart} className="icon" />
-            <h9>This site was made with care using React.js</h9>
-          </div>
-
-          {/* <div className="video-container">
-            <video src={video} type="video/mp4" width="auto" height="60" className="video-box" autoPlay muted> */}
-          {/* <source src={video} type="video/mp4" /> */}
-          {/* Kassi S. Burnett */}
-          {/* </video>
-          </div> */}
-
-        </div>
-
-      </div>
-    </>
+      </>
+    </div>
   );
 
 }

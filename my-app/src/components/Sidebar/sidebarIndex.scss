@@ -1,7 +1,5 @@
 .nav-bar {  
-  //updated colors on bottom
     background: rgb(60, 54, 49);
-    background:rgb(94,88,79);
     background: rgb(213, 208, 199);
     width: 115px;
     height: 100%;
@@ -178,6 +176,8 @@
         background:rgb(94,88,79);
         background:rgb(166,153,146);
         background:rgb(233,228,219);
+        //just changed this but need to change click function
+        height: 50%;
         height: 100%;
         margin: 0;
         z-index: 2;
