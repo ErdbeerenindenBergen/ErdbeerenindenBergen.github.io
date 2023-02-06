@@ -165,9 +165,13 @@
   }
 
   .made-with-love {
-    margin-left: 30px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .sparkles {
+    display: none;
   }
 }
 }

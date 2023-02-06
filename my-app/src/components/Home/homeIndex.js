@@ -45,6 +45,7 @@ const Home = () => {
           overflowPx={0}
           fadeOutSpeed={20}
           flicker={false}
+          className="sparkles"
         />
         <div className="text-zone home-background">
           <div></div>
