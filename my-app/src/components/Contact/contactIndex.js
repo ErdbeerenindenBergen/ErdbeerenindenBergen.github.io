@@ -90,12 +90,12 @@ const Contact = () => {
             </form>
 
           </div>
-          <br/><br/><br/><br/>
+          {/* <br/><br/><br/><br/>
+            <br/><br/><br/><br/> */}
+            {/* <div></div> */}
+            {/* <br/><br/><br/><br/>
             <br/><br/><br/><br/>
-            <div></div>
-            <br/><br/><br/><br/>
-            <br/><br/><br/><br/>
-            <h8>.</h8>
+            <h8>.</h8> */}
         </div>
 
 
