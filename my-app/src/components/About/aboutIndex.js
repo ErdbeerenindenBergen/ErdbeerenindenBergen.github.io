@@ -73,17 +73,19 @@ const About = () => {
       text: "In December 2021, I graduated with my PhD in German Studies after the successful defense of my dissertation, a culmination of my research about cultural perceptions and representations of disability and nature.",
       altText: "The author stands in her red and silver graduation robe, royal blue hood, and velvet black tam. The background is red with The Ohio State University on it."
     },
-    {slideStyleType: 'photoSlide',
-    url: ReadingAndWriting,
-    title: "outside with dogs",
-    text: "In 2022, I left my work in academia. I dreamt of collaborative projects rather than days of solo work, and I had grown frustrated with analyzing and critiquing problems -- I wanted to write real-world solutions. So, I transitioned from one kind of reading and writing to another. In December 2022, I graduated with my Full-stack Development Certification from Tech Elevator.",
-    altText: "There are two images side-by-side. On the left, an image of a white bookshelf stuffed with different colored books, and on the right, the model class for an Event object written in Java in IntelliJ."
+    {
+      slideStyleType: 'photoSlide',
+      url: ReadingAndWriting,
+      title: "outside with dogs",
+      text: "In 2022, I left my work in academia. I dreamt of collaborative projects rather than days of solo work, and I had grown frustrated with analyzing and critiquing problems -- I wanted to write real-world solutions. So, I transitioned from one kind of reading and writing to another. In December 2022, I graduated with my Full-stack Development Certification from Tech Elevator.",
+      altText: "There are two images side-by-side. On the left, an image of a white bookshelf stuffed with different colored books, and on the right, the model class for an Event object written in Java in IntelliJ."
     },
-    {slideStyleType: 'photoSlide',
-    url: playingOutside,
-    title: "outside with dogs",
-    text: "In my free time, I enjoy traveling (when I can), trying new things (especially food), and playing outside (especially with my German Shepherds).",
-    altText: "The author jogs across a baseball diamond toward you. Bright green grass of spring lies in the foreground. Three German Shepherds, one black, one white, and one black, tan, and cream, zig-zag in front of her."
+    {
+      slideStyleType: 'photoSlide',
+      url: playingOutside,
+      title: "outside with dogs",
+      text: "In my free time, I enjoy traveling (when I can), trying new things (especially food), and playing outside (especially with my German Shepherds).",
+      altText: "The author jogs across a baseball diamond toward you. Bright green grass of spring lies in the foreground. Three German Shepherds, one black, one white, and one black, tan, and cream, zig-zag in front of her."
     }
   ];
 
@@ -110,8 +112,14 @@ const About = () => {
               </div>
             </div>
 
+            <br/>
+            <br/>
+            <br/>
+
           </div>
+
         </div>
+
       </>
     </div>
   )
