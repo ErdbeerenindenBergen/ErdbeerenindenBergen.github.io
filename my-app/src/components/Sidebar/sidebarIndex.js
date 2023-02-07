@@ -4,45 +4,63 @@ import { useState } from 'react'
 import LogoKB from '../../assets/images/LogoKB.png'
 import LogoSubtitle from '../../assets/images/LogoSubtitle.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHome, faUser, faEnvelope, faBook, faBars, faPenFancy } from '@fortawesome/free-solid-svg-icons'
+import { faHome, faUser, faEnvelope, faBook, faBars, faPenFancy, faClose } from '@fortawesome/free-solid-svg-icons'
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 
 const Sidebar = () => {
-    const [showNav, setShowNav] = useState(false);
+  const [showNav, setShowNav] = useState(false);
 
-return (
-  <div className="nav-bar" >
-    <Link className="logo" 
-    // class="left-corner" 
-    to="/">
+  const nav = document.querySelector('#nav');
+
+  function outsideClose(event) {
+    if (!nav.contains(event.target)) {
+      setShowNav(false);
+    }
+  }
+
+  function close() {
+    window.addEventListener('mousedown', outsideClose);
+  }
+
+  return (
+    <div className="nav-bar" onClick={close} >
+      <Link className="logo"
+        // class="left-corner" 
+        to="/">
         <img src={LogoKB} alt="logo" />
         <img className="sub-logo" src={LogoSubtitle} alt="Kassi Burnett, PhD" />
-    </Link>
+      </Link>
 
-    <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink exact="true" activeclassname="active" to="/" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faHome} />
+      <nav id='nav' className={showNav ? 'mobile-show' : 'end-mobile-show'}>
+        <NavLink exact="true" activeclassname="active"  className="nav-icon" to="/" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faHome} />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faUser}  />
+        <NavLink exact="true" activeclassname="active" className="about-link nav-icon" to="/about" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faUser} />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faEnvelope} />
+        <NavLink exact="true" activeclassname="active" className="contact-link nav-icon" to="/contact" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faEnvelope} />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="portfolio-link" to="/portfolio" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faBook}  />
+        <NavLink exact="true" activeclassname="active" className="portfolio-link nav-icon" to="/portfolio" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faBook} />
         </NavLink>
 
-        <NavLink exact="true" activeclassname="active" className="skills-link" to="/skills" onClick={() => setShowNav(false)}>
-            <FontAwesomeIcon icon={faPenFancy} />
+        <NavLink exact="true" activeclassname="active" className="skills-link nav-icon" to="/skills" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faPenFancy} />
         </NavLink>
 
-    </nav>
+        <FontAwesomeIcon 
+          onClick={() => setShowNav(false)}
+          icon={faClose}
+          color="#ffd700"
+          size="3x"
+          className='close-icon' />
+      </nav>
 
-    <ul>
+      <ul>
         <li>
           <a
             href="https://www.linkedin.com/in/kassi-burnett-phd/"
@@ -68,13 +86,13 @@ return (
           </a>
         </li>
       </ul>
-      <FontAwesomeIcon 
-          onClick={() => setShowNav(true)}
-          icon={faBars}
-          color="#ffd700"
-          size="3x"
-          className='hamburger-icon' />
-
+      <FontAwesomeIcon
+        id='hamburger-icon'
+        onClick={() => setShowNav(true)}
+        icon={faBars}
+        color="#ffd700"
+        size="3x"
+        className='hamburger-icon' />
     </div>
   )
 }

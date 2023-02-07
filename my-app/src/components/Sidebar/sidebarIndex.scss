@@ -1,239 +1,258 @@
-.nav-bar {  
-    background: rgb(60, 54, 49);
-    background: rgb(213, 208, 199);
-    width: 115px;
-    height: 100%;
+.nav-bar {
+  background: rgb(60, 54, 49);
+  background: rgb(213, 208, 199);
+  width: 115px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 3;
+  min-height: 585px;
+
+  .logo {
+    display: block;
+    padding: 8px 0;
+
+    img {
+      display: block;
+      margin: 8px auto;
+      width: 54px;
+      height: auto;
+
+      &.sub-logo {
+        width: 90px;
+      }
+    }
+  }
+
+  nav {
+    display: block;
+    text-align: center;
     position: absolute;
-    top: 0;
-    z-index: 3;
-    min-height: 585px;
-  
-    .logo {
+    height: 210px;
+    top: 50%;
+    margin-top: -120px;
+    width: 100%;
+
+    a {
+      font-size: 27px;
+      color: rgb(141, 123, 112);
+      color: rgb(144, 128, 116);
       display: block;
-      padding: 8px 0;
-  
-      img {
-        display: block;
-        margin: 8px auto;
-        width: 54px;
-        height: auto;
-  
-        &.sub-logo {
-          width: 90px;
-        }
-      }
-    }
-  
-    nav {
-      display: block;
-      text-align: center;
-      position: absolute;
-      height: 210px;
-      top: 50%;
-      margin-top: -120px;
-      width: 100%;
-  
-      a {
-        font-size: 27px;
-        color: rgb(141,123,112);
-        color: rgb(144, 128, 116);
-        display: block;
-        line-height: 51px;
-        font-weight: bold;
-        height: 55px;
-        position: relative;
-        text-decoration: none;
-  
-        i {
-          transition: all 0.3s ease-out;
-        }
-  
-        &:hover {
-          //updated color
-          color: rgb(236, 147, 127);
-          color: rgb(94, 88, 79);
-          color: rgb(58, 84, 110);        
-  
-          svg {
-            opacity: 0;
-          }
-  
-          &:after {
-            opacity: 1;
-          }
-        }
-  
-        &:after {
-          content: '';
-          font-size: 15px;
-          letter-spacing: 2px;
-          position: absolute;
-          bottom: 0;
-          display: block;
-          width: 100%;
-          text-align: center;
-          opacity: 0;
-          -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out;
-        }
-  
-        &:first-child {
-          &:after {
-            content: 'HOME';
-          }
-        }
-      }
-  
-      a.about-link {
-        &:after {
-          content: 'ABOUT';
-        }
-      }
-  
-      a.contact-link {
-        &:after {
-          content: 'CONTACT';
-        }
-      }
-  
-      a.portfolio-link {
-        &:after {
-          content: 'PORTFOLIO';
-        }
+      line-height: 51px;
+      font-weight: bold;
+      height: 55px;
+      position: relative;
+      text-decoration: none;
+
+      i {
+        transition: all 0.3s ease-out;
       }
 
-      a.skills-link {
-        &:after {
-          content: 'SKILLS';
-        }
-      }
-  
-      a.active {
+      &:hover {
+        //updated color
+        color: rgb(236, 147, 127);
+        color: rgb(94, 88, 79);
+        color: rgb(58, 84, 110);
+
         svg {
-          color: rgb(236, 147, 127);
-          color: rgb(58, 84, 110);          
+          opacity: 0;
+        }
+
+        &:after {
+          opacity: 1;
+        }
+      }
+
+      &:after {
+        content: '';
+        font-size: 15px;
+        letter-spacing: 2px;
+        position: absolute;
+        bottom: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        opacity: 0;
+        -webkit-transition: all 0.3s ease-out;
+        transition: all 0.3s ease-out;
+      }
+
+      &:first-child {
+        &:after {
+          content: 'HOME';
         }
       }
     }
 
-    ul {
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-        display: block;
-        padding: 0;
-        list-style: none;
-        text-align: center;
-        margin: 0;
-        margin-top: 5px;
-    
-        li {
-          a {
-            padding: 7px 0;
-            display: block;
-            font-size: 35px;
-            line-height: 16px;
-            height:45px;
-            color: rgb(141,123,112);
-            // color: rgb(244,244,236);
-          }
-    
-          &:hover {
-            .anchor-icon {
-              color: rgb(236, 147, 127);
-              color:rgb(224,163,148);
-              color: rgb(58, 84, 110);       
-            }
-          }
-        }
+    a.about-link {
+      &:after {
+        content: 'ABOUT';
+      }
     }
+
+    a.contact-link {
+      &:after {
+        content: 'CONTACT';
+      }
+    }
+
+    a.portfolio-link {
+      &:after {
+        content: 'PORTFOLIO';
+      }
+    }
+
+    a.skills-link {
+      &:after {
+        content: 'SKILLS';
+      }
+    }
+
+    a.active {
+      svg {
+        color: rgb(236, 147, 127);
+        color: rgb(58, 84, 110);
+      }
+    }
+  }
+
+  ul {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: block;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    margin-top: 5px;
+
+    li {
+      a {
+        padding: 7px 0;
+        display: block;
+        font-size: 35px;
+        line-height: 16px;
+        height: 45px;
+        color: rgb(141, 123, 112);
+        // color: rgb(244,244,236);
+      }
+
+      &:hover {
+        .anchor-icon {
+          color: rgb(236, 147, 127);
+          color: rgb(224, 163, 148);
+          color: rgb(58, 84, 110);
+        }
+      }
+    }
+  }
 }
 
-.hamburger-icon, .close-icon {
-    display: none;
+.hamburger-icon,
+.close-icon {
+  display: none;
 }
 
 //TO-DO Set min-height for media site
 @media screen and (max-width: 1200px) {
-    .nav-bar { 
-      // background: transparent;
-      position: initial;
-      height: auto;
-      min-height: auto;
-      width:100%;
-  
-       ul, nav {
-        display: none;
-       }
-  
-       nav {
-        padding-top: 30px;
-        width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        background: rgb(60, 54, 49);
-        background:rgb(94,88,79);
-        background:rgb(166,153,146);
-        background:rgb(233,228,219);
-        //just changed this but need to change click function
-        height: 50%;
-        height: 100%;
-        margin: 0;
-        z-index: 2;
-        position: fixed;
-  
-        &.mobile-show {
-          display: block;
-        }
-  
-        a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-  
-        a:after {
+  .nav-bar {
+    // background: transparent;
+    position: initial;
+    height: auto;
+    min-height: auto;
+    width: 100%;
+
+    ul,
+    nav {
+      display: none;
+    }
+
+    nav {
+      padding-top: 20px;
+      //changed width below
+      width: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      // float: right;
+      background: rgb(60, 54, 49);
+      background: rgb(94, 88, 79);
+      background: rgb(166, 153, 146);
+      background: rgb(233, 228, 219);
+      //set height or min-height + height below
+      min-height: 285px;
+      height: 100%;
+      // height: 75%;
+      margin: 0;
+      z-index: 2;
+      position: fixed;
+      //new stuff below
+      // visibility: hidden;
+      opacity: 0;
+      // transition: visibility 0s linear 300ms, opacity 300ms;
+
+      &.mobile-show {
+        display: block;
+        //new stuff below
           opacity: 1;
-          position: initial;
-          width: auto;
-          margin-left: 10PX;
+          animation: fade 0.2s linear;
         }
-  
-        a svg {
-          opacity: 1 !important;
+        @keyframes fade {
+          0%{ opacity: 0 }
+          100% { opacity: 1 }
         }
-       }
-  
-       .hamburger-icon,
-       .close-icon {
-          position: absolute;
-          font-size: 45px;
-          top: 25px;
-          right: 25px;
-          display: block;
-          color: rgb(141,123,112);
 
-       }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
-       .hamburger-icon:hover {
-        cursor: pointer;
-       }
+      a:after {
+        opacity: 1;
+        position: initial;
+        width: auto;
+        margin-left: 10PX;
+      }
+
+      a svg {
+        opacity: 1 !important;
+      }
+
+  }
+
+    .hamburger-icon,
+    .close-icon {
+      position: absolute;
+      font-size: 45px;
+      top: 25px;
+      right: 25px;
+      display: block;
+      color: rgb(141, 123, 112);
     }
 
-    .logo {
-
-       img {
-         margin: 0;
-       }
+    .hamburger-icon:hover,
+    .close-icon:hover {
+      cursor: pointer;
+      color: rgb(58, 84, 110);
+      color: rgb(151,63,68);
     }
+  }
 
-    // .left-corner {
-    //     display: block;
-    //     padding: 8px 0;
-    //       margin: 8px auto;
-    //       width: 54px;
-    //       height: auto;
-    //         width: 90px;
-    // }
+  .logo {
+
+    img {
+      margin: 0;
+    }
+  }
+
+  // .left-corner {
+  //     display: block;
+  //     padding: 8px 0;
+  //       margin: 8px auto;
+  //       width: 54px;
+  //       height: auto;
+  //         width: 90px;
+  // }
 }
