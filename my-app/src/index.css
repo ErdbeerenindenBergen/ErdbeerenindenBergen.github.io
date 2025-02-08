@@ -11,6 +11,9 @@ body {
   background: rgb(61,94,85);
   background: rgb(151,168,152);
   background: rgb(248, 248, 243);
+  background: rgb(36, 35, 35);
+  /* background: rgb(36, 35, 35); */
+
   /* background:rgb(166,153,146); */
   overflow: hidden;
   display: block;

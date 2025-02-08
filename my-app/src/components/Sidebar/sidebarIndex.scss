@@ -1,6 +1,6 @@
 .nav-bar {
   background: rgb(60, 54, 49);
-  background: rgb(213, 208, 199);
+  background: #1B1B1B;
   width: 115px;
   height: 100%;
   position: absolute;
@@ -37,6 +37,7 @@
       font-size: 27px;
       color: rgb(141, 123, 112);
       color: rgb(144, 128, 116);
+      // color: #EAEAEA;
       display: block;
       line-height: 51px;
       font-weight: bold;
@@ -53,6 +54,8 @@
         color: rgb(236, 147, 127);
         color: rgb(94, 88, 79);
         color: rgb(58, 84, 110);
+        color: rgb(82, 139, 196);
+        // color: #e20044;
 
         svg {
           opacity: 0;
@@ -112,6 +115,7 @@
       svg {
         color: rgb(236, 147, 127);
         color: rgb(58, 84, 110);
+        color: rgb(82, 139, 196);
       }
     }
   }
@@ -135,6 +139,7 @@
         line-height: 16px;
         height: 45px;
         color: rgb(141, 123, 112);
+        // color: #EAEAEA;
         // color: rgb(244,244,236);
       }
 
@@ -143,6 +148,7 @@
           color: rgb(236, 147, 127);
           color: rgb(224, 163, 148);
           color: rgb(58, 84, 110);
+          color: rgb(82, 139, 196);
         }
       }
     }
@@ -179,7 +185,7 @@
       background: rgb(60, 54, 49);
       background: rgb(94, 88, 79);
       background: rgb(166, 153, 146);
-      background: rgb(233, 228, 219);
+      background: rgb(219, 233, 224);
       //set height or min-height + height below
       min-height: 285px;
       height: 100%;

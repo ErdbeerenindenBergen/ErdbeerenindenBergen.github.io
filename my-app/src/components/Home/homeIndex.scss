@@ -1,4 +1,15 @@
+.container {
+  top: 0%;
+}
+
 .home-page {
+  background: rgb(36, 35, 35);
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Vertically center */
+  justify-content: center; /* Horizontally center (optional) */
+  text-align: center;
+
   .text-zone {
     position: center;
     text-align: center;
@@ -91,7 +102,9 @@
 
   .home-background {
     background: rgb(197, 207, 198);
-    margin: 5% 40px 0px 160px;
+    background: rgb(36, 35, 35);
+
+    margin: 0% 40px 0px 160px;
     border-radius: 0px;
     padding-top: 20px;
   }
@@ -100,8 +113,10 @@
     //updated colors on bottom
     color: rgb(61, 94, 85);
     color: rgb(137, 157, 139);
+    color:#EAEAEA;
     background-color: rgb(255, 234, 206);
     background-color: rgb(233, 228, 219);
+    background-color: rgb(151, 63, 68);
     font-size: min(max(15px, 4vw), 35px);
     font-weight: 400;
     letter-spacing: 4px;
@@ -120,7 +135,7 @@
     cursor: pointer;
 
     &:hover {
-      background: rgb(151, 63, 68);
+      background: rgb(119, 49, 53);
       color: rgb(244, 244, 236);
       transition: 0.4s ease-in-out;
     }
@@ -128,6 +143,10 @@
 }
 
 @media screen and (max-width: 1200px) {
+.container {
+  margin-top: 0%;
+}
+
   .home-page {
     .text-zone {
       top: 50%;

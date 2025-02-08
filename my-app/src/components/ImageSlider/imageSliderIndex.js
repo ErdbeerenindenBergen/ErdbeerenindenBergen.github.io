@@ -1,81 +1,57 @@
-import { useState } from 'react'
-import './imageSliderIndex.scss'
-import LeftArrowHomeMade from '../../assets/images/LeftArrowHomeMade.png';
-import RightArrowHomeMade from '../../assets/images/RightArrowHomeMade.png';
-import ReversedLeftArrowHomeMade from '../../assets/images/ReversedLeftArrowHomeMade.png';
-import ReversedRightArrowHomeMade from '../../assets/images/ReversedRightArrowHomeMade.png';
+import { useEffect, useState } from 'react';
+import './imageSliderIndex.scss';
 
 const ImageSlider = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [fadeClass, setFadeClass] = useState('fade-in');
 
-  const goToPrevious = () => {
-    const isFirstSlide = currentIndex === 0;
-    const newIndex = isFirstSlide ? slides.length - 1 : currentIndex - 1;
-    setCurrentIndex(newIndex);
-  };
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFadeClass('fade-out'); // Start fade-out animation
 
-  const goToNext = () => {
-    const isLastSlide = currentIndex === slides.length - 1;
-    const newIndex = isLastSlide ? 0 : currentIndex + 1;
-    setCurrentIndex(newIndex);
-  }
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) =>
+          prevIndex === slides.length - 1 ? 0 : prevIndex + 1
+        );
+        setFadeClass('fade-in'); // Start fade-in animation
+      }, 500); // Adjust timing for smooth transition
+    }, 7000); // Adjust speed (5000ms = 5 seconds per slide)
 
-  const [isHoveringLeft, setIsHoveringLeft] = useState(false);
+    return () => clearInterval(interval);
+  }, [slides.length]);
 
-  const handleMouseOverLeft = () => {
-    setIsHoveringLeft(true);
-  };
-
-  const handleMouseOutLeft = () => {
-    setIsHoveringLeft(false);
-  };
-
-  const [isHoveringRight, setIsHoveringRight] = useState(false);
-
-  const handleMouseOverRight = () => {
-    setIsHoveringRight(true);
-  };
-
-  const handleMouseOutRight = () => {
-    setIsHoveringRight(false);
+  // Handle manual dot selection
+  const goToSlide = (index) => {
+    setFadeClass('fade-out');
+    setTimeout(() => {
+      setCurrentIndex(index);
+      setFadeClass('fade-in');
+    }, 500);
   };
 
   return (
-    <>
-      <div className='slider'>
-
-        <div className='arrow-space' onClick={goToPrevious}>
-          <div onMouseOver={handleMouseOverLeft}
-              onMouseOut={handleMouseOutLeft} >
-            <img src={LeftArrowHomeMade} alt="clickable left arrow" className='left-arrow' 
-              />
-            {isHoveringLeft && ( <img src={ReversedLeftArrowHomeMade} alt="left arrow that has been clicked or hovered over"
-            className='left-arrow' />
-            )}
-          </div>
-        </div>
-
-        <img src={slides[currentIndex].url} alt={slides[currentIndex].altText} className={slides[currentIndex].slideStyleType}></img>
-
-        <div className='arrow-space' onClick={goToNext} onMouseOver={handleMouseOverRight}
-            onMouseOut={handleMouseOutRight} >
-          <img src={RightArrowHomeMade} alt="clickable right arrow"  className='right-arrow' />
-          {isHoveringRight && ( <img src={ReversedRightArrowHomeMade} alt="right arrow that has been clicked or hovered over"
-          className='right-arrow' />
-          )}
-        </div>
-
+    <div className="carousel-container">
+      <div className={`carousel-slide ${fadeClass}`}>
+        <img
+          src={slides[currentIndex].url}
+          alt={slides[currentIndex].altText}
+          className="carousel-image"
+        />
+        <div className={`carousel-caption ${fadeClass}`}>{slides[currentIndex].text}</div>
       </div>
 
-      <div className="spacing-for-subtext">
-        <h4>{slides[currentIndex].text}</h4>
+      {/* Navigation Dots */}
+      <div className="dots-container">
+        {slides.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? 'active' : ''}`}
+            onClick={() => goToSlide(index)}
+          />
+        ))}
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-    </>
-  )
+    </div>
+  );
 };
 
 export default ImageSlider;

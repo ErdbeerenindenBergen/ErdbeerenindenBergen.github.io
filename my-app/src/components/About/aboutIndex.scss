@@ -1,7 +1,7 @@
 .container-styles {
     min-width: 250px;
     border-radius: 10%;
-    width: 70%;
+    width: 100%;
     height: auto;
     object-fit: cover;
     margin: 0 auto;
@@ -9,6 +9,10 @@
 
 .home-background {
     background: rgb(197, 207, 198);
+    background: #1B1B1B;
+    background: none;
+
+    // background: rgb(36, 35, 35);
     margin: 0 0 0 20px;
     border-radius: 0px;
     padding-top: 20px;
