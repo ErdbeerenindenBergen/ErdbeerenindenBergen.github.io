@@ -5,9 +5,10 @@
 
 .projectSlide {
   width: 100%;
-  height: 100%;
+  height: 500px;
+  object-fit: contain;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 0px;
   background-position: center;
 }
 
@@ -16,7 +17,7 @@
   height: 620px;
   object-fit: cover;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-position: center;
 }
 
@@ -57,9 +58,9 @@ h4 {
 .spacing-for-subtext {
   margin-bottom: 0px;
   margin-top: 10px;
-  background: rgb(233, 228, 219);
+  background: rgb(248, 248, 243);
   padding: 10px 20px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 @media screen and (max-width: 700px) {
@@ -75,12 +76,21 @@ h4 {
     height: auto;
   }
 
+  .projectSlide {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    margin-top: 10px;
+    border-radius: 0px;
+    background-position: center;
+  }
+
   .photoSlide {
     width: 100%;
     height: 300px;
     object-fit: cover;
     margin-top: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-position: center;
   }
 

@@ -22,7 +22,7 @@
       min-width: 260px;
       width: 80%;
       max-width: 450px;
-      border-radius: 10%;
+      border-radius: 5%;
       height: auto;
       animation: fadeIn 1s linear both;
       animation-delay: 1.4s;
@@ -92,7 +92,7 @@
   .home-background {
     background: rgb(197, 207, 198);
     margin: 5% 40px 0px 160px;
-    border-radius: 35px;
+    border-radius: 0px;
     padding-top: 20px;
   }
 
@@ -111,7 +111,7 @@
     //two border options for button below
     border: 2px solid rgb(244, 244, 236);
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     margin-top: 10px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;

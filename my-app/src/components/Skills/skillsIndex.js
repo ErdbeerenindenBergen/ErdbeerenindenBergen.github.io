@@ -59,7 +59,11 @@ const Skills = () => {
                                             "PostgreSQL",
                                             "Responsive Design",
                                             "E/R Diagrams",
-                                            "Integration Testing"
+                                            "Integration Testing",
+                                            "Laravel",
+                                            "PHP",
+                                            "Classic ASP",
+                                            "GitHub Actions",
                                         ]}
                                     </TagCloud>
                                 </div>

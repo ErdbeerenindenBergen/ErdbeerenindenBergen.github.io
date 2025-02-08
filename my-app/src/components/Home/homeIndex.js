@@ -92,12 +92,12 @@ const Home = () => {
 
           </div>
 
-          <div className="made-with-love">
+          {/* <div className="made-with-love">
             <div>
               <FontAwesomeIcon icon={faHeart} className="icon" />
               <h9>This site was made with care using React.js</h9>
             </div>
-          </div>
+          </div> */}
 
         </div>
       </>

@@ -1,5 +1,5 @@
 .container-styles-portfolio {
-    border-radius: 10%;
+    border-radius: 0px;
     width: 80%;
     height: auto;
     margin: 0 auto;
@@ -8,7 +8,7 @@
 .portfolio-background {
     background: rgb(237, 234, 227);
     margin: 0 0px 0 15px;
-    border-radius: 35px;
+    border-radius: 0px;
     padding-top: 20px;
   }
 
@@ -23,17 +23,17 @@
     margin: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    background:rgb(233, 228, 219);
-    border-radius: 30px;
-    width: 30%;
+    // background:rgb(244, 244, 236);
+    border-radius: 0px;
+    width: 80%;
 }
 
 .background-for-portfolio {
     background: rgb(74, 100, 92);
     background: rgb(197, 207, 198);
-    border-radius: 15px;
-    box-shadow: 0 5px 10px 5px rgb(31, 61, 59);
-    box-shadow: 0 5px 10px 5px rgb(151, 168, 152);
+    border-radius: 5px;
+    // box-shadow: 0 5px 10px 5px rgb(31, 61, 59);
+    box-shadow: none;
     width: 80%;
     margin: 0 auto 20px auto;
     padding-top: 15px;
